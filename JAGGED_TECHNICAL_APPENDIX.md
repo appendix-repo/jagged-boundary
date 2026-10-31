@@ -1,7 +1,5 @@
 # Technical Appendix: The Jagged Boundary
 
-*Version of 30 October 2026.*
-
 *Supplement to the Stage 1 proposal, "The Jagged Boundary," submitted to the Organization Science Special Issue: AI-Enabled Frontiers in Organizational Science. This appendix gives the complete Sorites-gradient item sequence and its design matrix, the counterbalancing scheme, the agent interviewer's specification and instruction set, worked interviewer transcripts, the response schema, operational definitions of every measure, pre-registered hypotheses with the outcomes that would count against them, the norm-dynamics model, a synthetic-data demonstration of the analysis pipeline, the sampling frame, and the governance protocol. It supersedes the compressed descriptions in the proposal itself, which reference this document.*
 
 **Contents**
