@@ -1,0 +1,611 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:jagged-boundary:schema:traversal:v0.2",
+  "title": "Jagged Boundary response schema, draft v0.2 (28 October 2026; 37 items, instrument v0.2)",
+  "description": "One record per completed traversal. Interview records link to a traversal by participant_id. Identifiers are pseudonymous; the key linking them to persons is held separately by the host (appendix Section 11).",
+  "type": "object",
+  "required": [
+    "participant_id",
+    "instrument_version",
+    "condition",
+    "strata",
+    "responses",
+    "probes",
+    "timing"
+  ],
+  "properties": {
+    "participant_id": {
+      "type": "string",
+      "pattern": "^P[0-9A-F]{8}$"
+    },
+    "instrument_version": {
+      "type": "string",
+      "description": "Version of instrument/items.json administered, e.g. 0.1"
+    },
+    "condition": {
+      "$ref": "#/$defs/Condition"
+    },
+    "strata": {
+      "$ref": "#/$defs/Strata"
+    },
+    "responses": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ItemResponse"
+      },
+      "minItems": 37,
+      "maxItems": 37
+    },
+    "probes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ProbeResponse"
+      }
+    },
+    "timing": {
+      "type": "object",
+      "required": [
+        "started",
+        "completed"
+      ],
+      "properties": {
+        "started": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "completed": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "interview_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Set if the participant was selected for, and consented to, the agent interview"
+    }
+  },
+  "$defs": {
+    "Condition": {
+      "type": "object",
+      "required": [
+        "order",
+        "layer_version",
+        "interview_arm"
+      ],
+      "properties": {
+        "order": {
+          "enum": [
+            "F",
+            "R",
+            "E",
+            "S"
+          ],
+          "description": "F forward, R reverse, E outward from a random entry, S scrambled (Section 2.3)"
+        },
+        "entry_item": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Entry item for order E"
+        },
+        "presentation_sequence": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Item ids in the order shown"
+        },
+        "layer_version": {
+          "enum": [
+            "A",
+            "B",
+            "C"
+          ],
+          "description": "Split-sample layer version (Section 9.3): A all layers about the field; B second-order about a named stratum; C first-order only"
+        },
+        "target_stratum": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "For layer version B: the stratum the second-order question names"
+        },
+        "interview_arm": {
+          "enum": [
+            "none",
+            "defeater",
+            "reflection_only"
+          ]
+        }
+      }
+    },
+    "Strata": {
+      "type": "object",
+      "required": [
+        "subfield",
+        "career_stage",
+        "tradition"
+      ],
+      "properties": {
+        "subfield": {
+          "enum": [
+            "strategy",
+            "ob",
+            "operations",
+            "entrepreneurship",
+            "other"
+          ]
+        },
+        "career_stage": {
+          "enum": [
+            "doctoral",
+            "pre_tenure",
+            "post_tenure",
+            "emeritus_or_other"
+          ]
+        },
+        "tradition": {
+          "enum": [
+            "formal_modeling",
+            "quantitative_empirical",
+            "qualitative",
+            "mixed",
+            "conceptual"
+          ]
+        },
+        "editorial_role": {
+          "type": "boolean",
+          "description": "Currently serving as editor or editorial-board member"
+        }
+      }
+    },
+    "Bin": {
+      "enum": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "description": "Fraction-of-field bins: 1 = 0-19%, 2 = 20-39%, 3 = 40-59%, 4 = 60-79%, 5 = 80-100%; midpoints 0.1, 0.3, 0.5, 0.7, 0.9"
+    },
+    "ItemResponse": {
+      "type": "object",
+      "required": [
+        "item_id",
+        "shown_at",
+        "judgment",
+        "confidence",
+        "latency_ms"
+      ],
+      "properties": {
+        "item_id": {
+          "type": "string"
+        },
+        "shown_at": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Position in the presentation sequence"
+        },
+        "judgment": {
+          "enum": [
+            "OK",
+            "NOT_OK"
+          ]
+        },
+        "confidence": {
+          "enum": [
+            "firm",
+            "arguable"
+          ],
+          "description": "Firmly / could be argued out of it"
+        },
+        "peer_second": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/Bin"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Anchor items only"
+        },
+        "peer_third": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/Bin"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Anchor items only, layer version A"
+        },
+        "disclosure": {
+          "enum": [
+            "would_disclose",
+            "would_not_disclose",
+            "would_not_do_it",
+            null
+          ],
+          "description": "Anchor items only"
+        },
+        "latency_ms": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "ProbeResponse": {
+      "type": "object",
+      "required": [
+        "probe_id",
+        "left",
+        "right",
+        "answer"
+      ],
+      "properties": {
+        "probe_id": {
+          "type": "string"
+        },
+        "left": {
+          "type": "string"
+        },
+        "right": {
+          "type": "string"
+        },
+        "answer": {
+          "enum": [
+            "left_more_acceptable",
+            "equally_acceptable",
+            "right_more_acceptable"
+          ]
+        }
+      }
+    },
+    "Interview": {
+      "type": "object",
+      "required": [
+        "interview_id",
+        "participant_id",
+        "arm",
+        "model",
+        "instruction_set_version",
+        "turns",
+        "reasons",
+        "placement_changes",
+        "audit"
+      ],
+      "properties": {
+        "interview_id": {
+          "type": "string"
+        },
+        "participant_id": {
+          "type": "string"
+        },
+        "arm": {
+          "enum": [
+            "defeater",
+            "reflection_only"
+          ]
+        },
+        "model": {
+          "type": "string",
+          "description": "Exact model identifier serving the interviewer"
+        },
+        "instruction_set_version": {
+          "type": "string"
+        },
+        "focal_items": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Items at and adjacent to the break-point, plus low-confidence items"
+        },
+        "turns": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Turn"
+          }
+        },
+        "reasons": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Reason"
+          }
+        },
+        "defeaters": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Defeater"
+          }
+        },
+        "placement_changes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/PlacementChange"
+          }
+        },
+        "audit": {
+          "$ref": "#/$defs/Audit"
+        }
+      }
+    },
+    "Turn": {
+      "type": "object",
+      "required": [
+        "n",
+        "speaker",
+        "move",
+        "text"
+      ],
+      "properties": {
+        "n": {
+          "type": "integer"
+        },
+        "speaker": {
+          "enum": [
+            "interviewer",
+            "participant"
+          ]
+        },
+        "move": {
+          "enum": [
+            "ask_reason",
+            "clarify",
+            "restate",
+            "present_defeater",
+            "neighbour_test",
+            "answer",
+            "defend",
+            "revise",
+            "abandon",
+            "close"
+          ],
+          "description": "RadianX move types (Lakatos Table 4)"
+        },
+        "text": {
+          "type": "string"
+        },
+        "refers_to": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Reason or defeater ids"
+        }
+      }
+    },
+    "Reason": {
+      "type": "object",
+      "required": [
+        "reason_id",
+        "for_item",
+        "supports",
+        "claim",
+        "warrant",
+        "heuristic_code",
+        "status"
+      ],
+      "properties": {
+        "reason_id": {
+          "type": "string"
+        },
+        "for_item": {
+          "type": "string"
+        },
+        "supports": {
+          "enum": [
+            "OK",
+            "NOT_OK"
+          ]
+        },
+        "claim": {
+          "type": "string",
+          "description": "ArgMap reconstruction: the placement"
+        },
+        "warrant": {
+          "type": "string",
+          "description": "ArgMap reconstruction: the general principle licensing it"
+        },
+        "presupposed_norm": {
+          "type": "string",
+          "description": "Deconstructor output: the norm the warrant presupposes"
+        },
+        "heuristic_code": {
+          "type": "string",
+          "description": "Stopping-heuristic code from the codebook (Section 3.5)"
+        },
+        "elicited_at_turn": {
+          "type": "integer"
+        },
+        "status": {
+          "enum": [
+            "defended",
+            "revised",
+            "abandoned",
+            "untested"
+          ]
+        }
+      }
+    },
+    "Defeater": {
+      "type": "object",
+      "required": [
+        "defeater_id",
+        "targets",
+        "kind",
+        "field",
+        "direction",
+        "text",
+        "outcome"
+      ],
+      "properties": {
+        "defeater_id": {
+          "type": "string"
+        },
+        "targets": {
+          "type": "string",
+          "description": "reason_id"
+        },
+        "kind": {
+          "enum": [
+            "rebutting",
+            "undercutting"
+          ],
+          "description": "Pollock (1987)"
+        },
+        "field": {
+          "enum": [
+            "intra",
+            "inter"
+          ],
+          "description": "ArgDef intra or cross-field (Lakatos Table 4)"
+        },
+        "construction": {
+          "enum": [
+            "neighbour_case",
+            "counterexample",
+            "consequence",
+            "analogy",
+            "principle_conflict",
+            "neighbour_test"
+          ],
+          "description": "v0.2: Phase 4 neighbour tests are recorded as defeaters with construction 'neighbour_test' and count toward directional balance"
+        },
+        "direction": {
+          "enum": [
+            "toward_OK",
+            "toward_NOT_OK"
+          ],
+          "description": "Which judgment the defeater, if accepted, would push the targeted item toward"
+        },
+        "text": {
+          "type": "string"
+        },
+        "outcome": {
+          "enum": [
+            "rebutted",
+            "accepted_reason_revised",
+            "accepted_reason_abandoned",
+            "not_engaged"
+          ]
+        },
+        "recognized_as_genuine": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "Participant's answer to the close-of-interview question"
+        }
+      }
+    },
+    "PlacementChange": {
+      "type": "object",
+      "required": [
+        "item_id",
+        "before",
+        "after",
+        "turn"
+      ],
+      "properties": {
+        "item_id": {
+          "type": "string"
+        },
+        "before": {
+          "enum": [
+            "OK",
+            "NOT_OK"
+          ]
+        },
+        "after": {
+          "enum": [
+            "OK",
+            "NOT_OK",
+            "undecided",
+            "split"
+          ],
+          "description": "'split': the participant divided the item into two readings and judged them differently"
+        },
+        "turn": {
+          "type": "integer"
+        },
+        "attributed_to": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "defeater_id, or null if the change came from reflection alone"
+        },
+        "confidence_before": {
+          "enum": [
+            "firm",
+            "arguable"
+          ]
+        },
+        "confidence_after": {
+          "enum": [
+            "firm",
+            "arguable"
+          ]
+        },
+        "condition": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "A condition the participant attached without changing the judgment (e.g. 'OK if disclosed'); added in v0.2 after the stand-in runs (appendix Section 4.5)"
+        }
+      },
+      "description": "A change in judgment, in confidence, or an added condition, on any item during the interview"
+    },
+    "Audit": {
+      "type": "object",
+      "required": [
+        "auditor_model",
+        "n_toward_OK",
+        "n_toward_NOT_OK",
+        "balance",
+        "leading_questions",
+        "pass"
+      ],
+      "properties": {
+        "auditor_model": {
+          "type": "string"
+        },
+        "n_toward_OK": {
+          "type": "integer"
+        },
+        "n_toward_NOT_OK": {
+          "type": "integer"
+        },
+        "balance": {
+          "type": "number",
+          "minimum": -1,
+          "maximum": 1,
+          "description": "(n_toward_OK - n_toward_NOT_OK) / total"
+        },
+        "leading_questions": {
+          "type": "integer",
+          "description": "Turns coded as presupposing an answer"
+        },
+        "interviewer_assertions": {
+          "type": "integer",
+          "description": "Turns in which the interviewer states its own view of an item"
+        },
+        "pass": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
