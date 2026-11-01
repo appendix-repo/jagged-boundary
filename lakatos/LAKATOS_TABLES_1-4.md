@@ -15,7 +15,7 @@
 | Modeling Assistant: Refiner     | Assists in the refinement of a model of a phenomenon or of a data set.                                                                                            |
 | Proof Verifier                  | Assists in the verification of a formal proof.                                                                                                                    |
 | Proof Synthesizer               | Assists in the construction of a proof or a counterexample.                                                                                                       |
-| Summarizer/Conclusion Builder   | Assists in the summarization of main findings of a completed paper, or in the creation [entry incomplete in the source]                                                                          |
+| Summarizer/Conclusion Builder   | Assists in the summarization of main findings of a completed paper, or in the creation of its concluding section.                                                                          |
 
 
 ### E.2 Table 2. Cognitive Operators for Advanced Research Assistant/Production Agents
