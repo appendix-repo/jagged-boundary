@@ -1,0 +1,102 @@
+{
+  "interview_id": "S1",
+  "instruction_set": "v0.1",
+  "arm": "defeater",
+  "participant_turns": 11,
+  "focal_items": ["27a", "27b", "22", "23"],
+  "dominance_violations": [{"accepted": "24", "rejected": "27b"}],
+  "reasons": [
+    {
+      "id": "R1",
+      "target_items": ["27a", "27b"],
+      "claim": "27a (agent checks proofs the author stated and proved) is OK; 27b (agent generates the proofs of theorems the author stated) is Not OK.",
+      "warrant": "A tool may check work the author produced, but it must not produce the part that carries the paper's contribution (for a theorist, the derivation) and leave the author only to check it. The author must be able to defend that part from the inside, not just report having checked it.",
+      "backing": "In the participant's field, stating a theorem is cheap and the contribution is showing that it holds and understanding why. That understanding comes from working through the derivation. Referees and seminar audiences push on specific steps, and the author must answer from first-hand understanding. The principle is deliberately narrow: prose, literature review and framing were never where the contribution lay.",
+      "presupposed_norm": "A paper's author is the person who did the work that constitutes its contribution and who can therefore answer for it from first-hand understanding.",
+      "norm_endorsed": true,
+      "norm_qualification": "'Did the work' cannot mean every keystroke, since coauthors split proofs and RAs run simulations. The second half carries more weight: the author must understand the contribution well enough that they could have done it. Whoever or whatever produced a derivation, someone who cannot answer for it from first-hand understanding should not sign it.",
+      "revised_warrant": "What the author must understand from the inside is the architecture and key steps of the proof (the strategy), not every line. An agent filling in routine lemmas or case-checking under an author-set strategy would be acceptable. 27b as written (the agent generates the proof, strategy included) remains Not OK.",
+      "heuristic_code": ["UNDR", "CORE"],
+      "heuristic_code_note": "Initially phrased as VERIF (checking versus producing). The participant put primary weight on first-hand understanding and accountability (UNDR) restricted to the contribution-bearing component (CORE). VERIF is a plausible alternative primary code.",
+      "status": "revised"
+    },
+    {
+      "id": "R2",
+      "target_items": ["22", "23"],
+      "claim": "22 and 23 (an LLM generates the central theoretical argument, or the argument plus hypotheses, which the author refines) are OK but arguable.",
+      "warrant": "Verbal theoretical arguments and hypotheses are conjectures, which are cheap. The contribution lies in writing down the model and proving the results, which stays with the author. Where the conceptual move itself (for example, seeing an unnoticed strategic structure) is the contribution, the same principle pulls toward Not OK.",
+      "presupposed_norm": "Same as R1.",
+      "norm_endorsed": true,
+      "heuristic_code": ["CORE", "UNDR"],
+      "status": "held (contribution-relative; explicitly conditional on the paper)"
+    },
+    {
+      "id": "R3",
+      "target_items": ["28"],
+      "claim": "28 (agent specifies extensions: new propositions and boundary conditions) is split.",
+      "warrant": "If the agent supplies results (propositions with why they hold and where they break down; boundary conditions are usually derived), it is equivalent to 27b and Not OK. If it only lists candidate propositions that the author then proves, it is like a referee's suggestion and OK.",
+      "presupposed_norm": "Same as R1.",
+      "norm_endorsed": true,
+      "heuristic_code": ["UNDR", "CORE"],
+      "status": "revised (participant said the original reading may have read more into the item than its text states)"
+    },
+    {
+      "id": "R4",
+      "target_items": ["24", "27b"],
+      "claim": "24 (agent builds the formal model of the author's theory, which the author refines) is OK, while 27b is Not OK.",
+      "warrant": "A model can be evaluated completely by reading it. The players, actions, payoffs and information are all on the page, and every assumption is a choice the author accepts or changes, so the author comes to own each modeling decision. Checking that someone else's proof is valid is not the same as understanding why the result holds, and that understanding is what the author is accountable for.",
+      "presupposed_norm": "Same as R1.",
+      "norm_endorsed": true,
+      "heuristic_code": ["UNDR", "OTHER"],
+      "heuristic_code_note": "OTHER: the 'evaluable by inspection' property (whether an artefact's validity and meaning are fully visible on reading) is a respect the T/C/G/S/H coding does not capture.",
+      "status": "revised (participant conceded that a clever modeling choice is sometimes the insight, and lowered confidence on 24)"
+    }
+  ],
+  "neighbour_tests": [
+    {"item": "22", "side": "before_break", "outcome": "Warrant judged mostly not to cover 22, because ideas are cheap. The participant conceded it would cover 22 where the conceptual insight is the contribution."},
+    {"item": "28", "side": "after_break", "outcome": "Participant split 28 by reading: Not OK if the agent supplies the results, OK if it only states candidate propositions."}
+  ],
+  "dominance_test": {
+    "pair": {"accepted": "24", "rejected": "27b"},
+    "participant_named_respect": "Evaluability by inspection: a model is fully visible on the page and each assumption is an owned choice, whereas validating a proof does not yield understanding of why the result holds.",
+    "outcome": "24 kept OK; confidence lowered from firmly to could be argued out of it."
+  },
+  "defeaters": [
+    {
+      "id": "D1",
+      "target": "R1 (as applied to 27a)",
+      "kind": "rebutting",
+      "field": "intra-field (doctoral training in formal social science / advisor-student norms)",
+      "construction": "neighbour case: advisor-marked proofs. Errors cluster where understanding is incomplete, so finding one's own errors is part of the derivation work that a checker takes over.",
+      "direction": "toward Not OK on 27a (line earlier)",
+      "text": "When a student's proofs come back from an advisor with errors marked, the slips often sit where the student's understanding was incomplete. Finding your own errors is part of the 'fighting through the derivation' that produces understanding, so a careful checker takes over part of that work.",
+      "outcome": "rebutted",
+      "participant_response": "Flagging the location of an error still leaves the author to work out why the step fails and how to fix it, which is where the understanding comes from. Coauthors, audiences and referees have always caught errors without threatening authorship. The point concerns learning, not entitlement to sign. 27a stays OK, firmly.",
+      "recognized_as_genuine": false
+    },
+    {
+      "id": "D2",
+      "target": "R1 (as applied to 27b)",
+      "kind": "undercutting",
+      "field": "cross-field (mathematics: computer-assisted proof)",
+      "construction": "counterexample: the four-colour theorem (Appel and Haken) and the Kepler conjecture (Hales). The signing authors could not follow every machine-produced step from the inside, yet were credited as authors.",
+      "direction": "toward OK on 27b (line later)",
+      "text": "Large parts of the four-colour and Kepler proofs were produced by computer as case analyses no human worked through. The signing mathematicians could explain the strategy and the soundness of the method but not every step from the inside, and the field credits them as authors.",
+      "outcome": "revised",
+      "participant_response": "The human authors devised the proof (the reduction and the checking method), and the computer did specified grinding, which is closer to item 6. The warrant was sharpened: the author must understand the architecture and key steps from the inside, not every line. 27b as written (strategy included) stays Not OK.",
+      "recognized_as_genuine": true,
+      "downstream_effect": "Participant reported that the sharpened warrant is what later loosened their view of 24."
+    }
+  ],
+  "placement_changes": [
+    {"item": "24", "before": "OK (firmly)", "after": "OK (could be argued out of it)", "note": "Depends on whether the modeling itself is the contribution."},
+    {"item": "28", "before": "NOT_OK (firmly)", "after": "split / conditional", "note": "Not OK if the agent supplies results (propositions with derivations, derived boundary conditions); OK if it only lists candidate propositions the author proves. Not re-asked at close."},
+    {"item": "22", "before": "OK (could be argued out of it)", "after": "OK (could be argued out of it)", "note": "Unchanged, with a stated condition: leans Not OK in papers where the conceptual insight is the contribution."}
+  ],
+  "closing_judgments": {
+    "27a": "OK (firmly)",
+    "27b": "NOT_OK (firmly), as written. A variant with an author-set strategy and agent-filled routine lemmas or case-checking would be OK (noted as a different item).",
+    "22": "OK (could be argued out of it); leans Not OK where the conceptual insight is the contribution",
+    "23": "OK (could be argued out of it); hypotheses are statements and the author still derives them"
+  }
+}

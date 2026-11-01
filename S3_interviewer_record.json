@@ -1,0 +1,117 @@
+{
+  "interview_id": "S3",
+  "arm": "defeater",
+  "instruction_set": "v0.1",
+  "participant_turns": 11,
+  "focal_items": ["19", "20", "26"],
+  "dominance_violations": [{"accepted": "26", "rejected": "20"}],
+  "reasons": [
+    {
+      "id": "R1",
+      "target": "break pair 19 (OK) / 20 (Not OK)",
+      "claim": "Item 20 is Not OK while item 19 is OK.",
+      "warrant": "Anything a reader would reasonably take as the author's intellectual work (the theory, the hypotheses, the research design) must come from the author's own reasoning. Material that summarises others' work, such as the literature review, may be produced by a model if the author knows the sources well enough to tell when the summary is wrong, not merely that the citations exist.",
+      "backing": "The hypotheses are the claims the author says follow from their argument and that the data test. In OM a verbal argument underdetermines its hypotheses, so choosing which predictions to state, in which direction and at what level is a judgment call that decides what the paper tests. The author can check execution against ground truth but can only adopt a model's judgment calls, not vouch for them.",
+      "presupposed_norm": "Putting your name on a paper certifies that the intellectual contribution readers attribute to you came from your own reasoning, and that you know the rest well enough to vouch for it.",
+      "norm_endorsed": "yes, with an amendment: authorship has two parts, (1) the core ideas are mine and (2) I am answerable for everything else being correct. The participant says the vouching part counts for a lot in their field.",
+      "heuristic_code": ["ORIG", "UNDR"],
+      "status": "maintained; on the item-19 side, revised to add a disclosure condition (see R4). The participant states that the item-20 side depends on a contingent feature of how the field writes theory: they would be close to OK if the argument were formal enough that the hypotheses followed mechanically."
+    },
+    {
+      "id": "R2",
+      "target": "item 21 (Not OK) versus item 17 (OK)",
+      "claim": "Item 21 remains Not OK although item 17 is OK.",
+      "warrant": "In a theoretical argument, the reasoning lies in the connecting inferential steps (why A leads to B, under what conditions, what rules out alternatives). An outline gives the claims without those links, so a model drafting from it supplies exactly the part that must be the author's. For introductions and methods sections, the outline already holds the content and the prose is packaging.",
+      "backing": "If the outline spelled out every inferential step, item 21 would collapse into item 17 and be OK, but then the author would already have written the argument.",
+      "presupposed_norm": "Same as R1.",
+      "heuristic_code": ["ORIG", "CORE"],
+      "status": "maintained under the neighbour test"
+    },
+    {
+      "id": "R3",
+      "target": "dominance violation 26 (OK) versus 20 (Not OK)",
+      "claim": "Item 26 is OK although it involves at least as much coded machine involvement as item 20, which is Not OK.",
+      "warrant": "A tool that executes a specification the author set, with output the author can check against ground truth (rerun the code, inspect the data, confirm the numbers), falls under the author's vouching responsibility. A tool that makes the judgment calls about what the paper claims leaves nothing to check except the author's own judgment.",
+      "backing": "Item 25 was rejected precisely so that the test design stays the author's. The participant names a respect the coding misses: the coding lumps execution together with design.",
+      "caveat": "This is why item 26 is held only 'could be argued out of it'. Analysis contains forks (sample restrictions, clustering, outlier handling); if the agent quietly makes those choices, it is doing design.",
+      "heuristic_code": ["VERIF", "UNDR"],
+      "status": "maintained (conditional on analytic choices being the author's)"
+    },
+    {
+      "id": "R4",
+      "target": "item 19",
+      "claim": "Item 19 is OK if disclosed.",
+      "warrant": "Readers have a claim to know who or what drafted which part of a paper. A model is not owed credit, but leaving its role undisclosed withholds information from the reader.",
+      "presupposed_norm": "Authorship includes transparency to readers about who drafted what (by analogy with CRediT), separate from any credit owed to contributors.",
+      "heuristic_code": ["DISCL", "UNDR"],
+      "status": "new reason arising from defeater D2; adds a condition to the item-19 side of R1"
+    }
+  ],
+  "neighbour_tests": [
+    {
+      "item": "18",
+      "side": "before break",
+      "question": "Does the warrant cover a model writing the introduction from a brief description, given that the introduction frames the gap and the contribution?",
+      "response": "The participant grants that readers take the framing as the author's own and that in OM the introduction 'sells the contribution'. Item 18 is OK only if the description already states the gap and findings and the model turns it into prose. If the model decides how to position the paper, it is Not OK by the participant's own principle.",
+      "outcome": "confidence lowered and made conditional"
+    },
+    {
+      "item": "21",
+      "side": "after break",
+      "question": "Does the warrant cover a model drafting the theoretical argument from the author's detailed outline (compared with item 17)?",
+      "response": "Kept Not OK; see R2.",
+      "outcome": "judgment maintained"
+    }
+  ],
+  "defeaters": [
+    {
+      "id": "D1",
+      "target": "R1 (item 20)",
+      "kind": "undercutting",
+      "field": "mathematics (computer-assisted proof)",
+      "construction": "cross-field (L16)",
+      "direction": "toward OK on item 20 (line later)",
+      "text": "In mathematics, once the definitions and central argument are set out, corollaries are sometimes found by computer search or proof assistants, and credit still goes to whoever built the framework because the corollaries were implicit in it. In item 20 the argument is the author's, and the model only derives what follows.",
+      "response": "Rejects the analogy for OM: hypotheses do not follow deductively from a verbal argument, so choosing them is a judgment call. Links this to rejecting item 27b. Grants that the consideration would move them close to OK if the argument were formal enough that the hypotheses were mechanical consequences.",
+      "outcome": "rebutted",
+      "judgment_change": "none (briefly said 'maybe not quite as firmly'; at close reaffirmed firmly, with 'a formal enough argument would soften that')",
+      "recognized_as_genuine": true,
+      "recognized_comment": "It made the participant see that their objection rests on a contingent fact about how the field writes theory, not on a principle, and showed where their answer would give way."
+    },
+    {
+      "id": "D2",
+      "target": "R1 (item 19)",
+      "kind": "rebutting",
+      "field": "organizational and social science (ghost authorship, CRediT roles)",
+      "construction": "intra-field (L15)",
+      "direction": "toward Not OK on item 19 (line earlier)",
+      "text": "If a doctoral student drafted the literature review and the lead author edited it and checked the sources, CRediT would credit the student for 'writing – original draft'. Leaving them out entirely would be treated as ghost authorship, even though a literature review summarises others' work.",
+      "response": "Ghost authorship wrongs a person who is owed credit, and a model is not owed credit in that sense. What carries over is the reader's interest in knowing who drafted what. Item 19 stays OK but becomes 'OK if disclosed'.",
+      "outcome": "revised",
+      "judgment_change": "none (OK, could be argued out of it, now conditional on disclosure)",
+      "recognized_as_genuine": false,
+      "recognized_comment": "The participant says it 'mostly missed' their reason, which concerns credit owed to persons, but it landed on a side point they had not considered: the reader's right to know who drafted what."
+    }
+  ],
+  "placement_changes": [
+    {
+      "item": "18",
+      "before": "OK (firmly)",
+      "after": "OK (could be argued out of it), conditional on the framing coming from the author",
+      "trigger": "neighbour test, Phase 4"
+    },
+    {
+      "item": "19",
+      "before": "OK (could be argued out of it)",
+      "after": "OK (could be argued out of it), conditional on disclosure and on the author knowing the sources",
+      "trigger": "defeater D2"
+    }
+  ],
+  "final_focal_judgments": {
+    "18": "OK (could be argued out of it), if the framing comes from the author",
+    "19": "OK (could be argued out of it), if disclosed and the author knows the sources",
+    "20": "Not OK (firmly, in the participant's field); a formal enough argument would soften this",
+    "26": "OK (could be argued out of it), if the analytic choices are the author's and the agent only executes them"
+  },
+  "notes": "The participant consistently separates design and judgment calls (must be the author's) from execution checkable against ground truth (delegable, under the vouching duty). They describe the coding scheme as conflating execution and design (component C6). They also tie item 27b (Not OK) to the same reasoning as item 20."
+}

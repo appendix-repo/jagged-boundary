@@ -1,0 +1,67 @@
+{
+  "interview_id": "S4",
+  "instruction_set": "v0.1",
+  "arm": "reflection_only",
+  "participant_turns": 9,
+  "focal_items": ["18", "19"],
+  "dominance_violations": [],
+  "traversal_summary": {
+    "ok": ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","27a"],
+    "not_ok": ["19","20","21","22","23","24","25","26","27b","28","29","30","31"],
+    "could_be_argued_out_of_it": ["18","19"],
+    "first_rejection": "19",
+    "break_pair": ["18","19"]
+  },
+  "warrants": [
+    {
+      "id": "W1",
+      "claim": "Using an LLM is acceptable up to composing a section from the author's detailed outline (item 17), and not acceptable once it generates the theoretical argument, hypotheses, tests or analysis (items 20 onward).",
+      "warrant_confirmed": "The line falls where the machine starts doing the thinking rather than helping the author express thinking already done. Past that point two things fail: attribution (the author's name claims reasoning they did not do) and ownership (the author cannot fully defend the argument, answer for it in review, or know where it is weak).",
+      "confirmed": true,
+      "participant_refinements": [
+        "Added ownership/defensibility to the initial attribution-only formulation; cited editorial experience that such papers read as 'plausible but hollow'.",
+        "Attribution is the more basic component. Attribution and ownership go together in practice, not necessarily: someone could study a machine-built argument well enough to defend it, which would repair ownership but not attribution."
+      ],
+      "codes": ["ORIG", "UNDR"],
+      "secondary_notes": "Attribution framed as misrepresentation of the author's contribution (also touches LABOR)."
+    },
+    {
+      "id": "W2",
+      "claim": "Item 18 (intro from brief description) is OK and item 19 (literature review) is Not OK in the typical case; the difference is not the section type.",
+      "warrant_confirmed": "What matters is how much of the substantive choosing the author has already done before the model starts, and how well the author can catch the model when it chooses badly. With the introduction the author usually already owns the contribution and can spot wrong framing at once; with the literature review the model chooses what is relevant and how to carve the field (itself a theoretical move), which the author can check only if they have done the reading independently. Both items are borderline and depend on facts the scenarios leave open.",
+      "confirmed": true,
+      "codes": ["ORIG", "UNDR"],
+      "secondary_notes": "Literature-review carving described as a theoretical move (touches CORE); literature review as where one shows one knows the conversation (touches SKILL); reviewer concern about missed recent/niche work and misstated findings (touches RISK), presented as a practical rather than principled consideration."
+    },
+    {
+      "id": "W3",
+      "claim": "Using a tool to check the author's work (items 8, 27a) is acceptable; having an agent generate design, analysis, proofs or argument that the author then checks (items 25, 26, 27b and others) is not.",
+      "warrant_confirmed": "Using the tool to check work the author produced is acceptable; having it generate the design, analysis or argument that the author then checks is not, because in the second case the substantive choosing is the tool's. The participant states this is not a separate principle but W1's attribution principle applied to a kind of task: a checking tool is like a colleague or referee who catches errors and is not a coauthor.",
+      "confirmed": true,
+      "codes": ["VERIF", "ORIG"],
+      "secondary_notes": "Participant regards this as the most robust distinction in their answers."
+    }
+  ],
+  "heuristic_structure": "Single core principle (origination/attribution of the substantive thinking, ORIG), with understanding/ownership (UNDR) as a usually co-occurring but logically separable second condition, and verification-vs-production (VERIF) as a special case of the core principle. Borderline items resolved by degree of prior substantive choosing by the author and capacity to detect bad choices.",
+  "reflection_phase": {
+    "item_18": {
+      "what_would_flip_it": "If the framing of the puzzle, the gap and the contribution claims were really the model's choices because the brief description was thin, the item would be Not OK. OK judgment assumed the framing was already settled in the author's head.",
+      "uncertainty": "A 'brief description' makes the assumption that the framing is settled shakier than the participant would like."
+    },
+    "item_19": {
+      "what_would_flip_it": "If the author had already done the reading and supplied annotated sources and their own view of how the streams fit and disagree, so the model writes up a synthesis the author could have produced (like item 17), the item would be much closer to OK.",
+      "uncertainty": "Held loosely; 'then edit the result' would have to mean checking every claim against sources."
+    },
+    "break_pair_comparison": "Difference is not section label but the extent of the author's prior substantive choosing and ability to catch bad choices; both borderline; default reading keeps 18 OK and 19 Not OK because researchers typically know their contribution but have often not mastered every literature stream the paper touches.",
+    "other_uncertainties": [
+      "Item 17 (firmly OK) qualified: depends on how detailed the outline really is; a thin outline would involve the same framing work that caused hesitation on 18.",
+      "Judgments concern legitimacy, not detectability; as a reviewer the participant is less confident than some colleagues that such use can be reliably detected."
+    ]
+  },
+  "judgment_changes": [],
+  "qualifications_without_change": ["17", "18", "19"],
+  "dont_know_responses": [],
+  "defeaters": [],
+  "out_of_scope_requests": [],
+  "interviewer_notes": "Participant volunteered that by their own principle the 18/19 difference is thinner than their answers suggested; no interviewer challenge was presented (reflection-only arm). All original judgments retained."
+}

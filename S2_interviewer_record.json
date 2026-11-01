@@ -1,0 +1,125 @@
+{
+  "interview_id": "S2",
+  "arm": "defeater",
+  "instruction_set": "v0.1",
+  "participant_turns": 12,
+  "focal_items": ["15", "16"],
+  "dominance_violations": [],
+  "reasons": [
+    {
+      "id": "R1",
+      "items": ["15", "16"],
+      "claim": "Item 15 is OK and item 16 is Not OK.",
+      "warrant": "A model may work on writing in which the author has already made the interpretive calls, provided the author can check that its changes have not remade any of them. In 15 the author can set their own paragraph beside the redraft; in 16 there is only a list to compare against.",
+      "backing": "Reordering or restating can silently shift emphasis or soften a hedge, so having made the calls upstream is not enough without a check.",
+      "presupposed_norm": {
+        "offered": "Every interpretive judgment in a paper must be one the author made, or one the author can confirm is theirs by checking it against something they wrote.",
+        "participant_response": "held_with_modification",
+        "participant_version": "Every interpretive judgment in the paper must be one the author made or deliberately adopted (knew it was a judgment and chose it). Checking against one's own text is not the norm but the means of meeting it with a model, because a model's interpretive moves arrive quietly as prose, whereas a reviewer's or co-author's arrive as arguments one can accept or refuse."
+      },
+      "heuristic_code": ["UNDR", "VERIF"],
+      "neighbour_test": {
+        "before_break": {
+          "item": "14",
+          "result": "Warrant applied: 14 passes only on the same condition as 15 (actual side-by-side check for swapped interpretive words; example: 'participants described the policy as' becoming 'the policy was'). Participant kept 14 OK but said the original 'firmly' reflected the task sounding harmless, not the check; 14 and 15 on the same conditional footing, 15 carrying more risk."
+        },
+        "after_break": {
+          "item": "20",
+          "result": "Participant acknowledged the warrant alone would let 20 pass (hypotheses arrive as visible proposals), kept 20 Not OK, and articulated a second, separate reason (R2)."
+        }
+      },
+      "status": "abandoned",
+      "status_note": "After D1, participant said the speechwriting case 'broke my first reason': a careful read can count as deliberate adoption without an earlier text to compare against. The underlying norm (own or deliberately adopt every interpretive judgment) is retained; the check-against-own-text requirement is no longer the ground for 16. Judgment on 16 kept, now resting on R3."
+    },
+    {
+      "id": "R2",
+      "items": ["20", "21", "22", "23", "24", "25", "26", "27b", "28", "29", "30", "31"],
+      "claim": "Item 20 (and items from 20 onward) are Not OK, whatever the author does with the output.",
+      "warrant": "Any contribution that would earn a human collaborator co-authorship must come from the people named as authors; selecting among or refining someone else's version of it gives the author only a share, not origination. A model cannot be named, so its contribution at that level is credited to the author, which is misattribution.",
+      "backing": "A colleague who derived one's hypotheses would have a claim to co-authorship, not a footnote. Deriving what follows from an argument is the intellectual contribution itself.",
+      "presupposed_norm": {
+        "offered": null,
+        "participant_response": "stated_by_participant",
+        "participant_version": "Credit for substantive contributions must sit with the named authors. This norm is separate from, and applies jointly with, the norm of owning every judgment; a paper must meet both. Checking proofs (27a) or code (8) would not earn authorship, so only the first norm applies there; composing a paragraph from notes (16) probably would not earn authorship either."
+      },
+      "heuristic_code": ["LABOR", "ORIG"],
+      "status": "confirmed_untested",
+      "status_note": "Emerged during the after-break neighbour test; confirmed with participant's amendment ('people named as authors'). No defeater presented against it."
+    },
+    {
+      "id": "R3",
+      "items": ["16", "14", "15"],
+      "claim": "Item 16 is Not OK; items 14 and 15 remain OK because the composing, and so the interpretation, has already been done by the author.",
+      "warrant": "Where composing the prose is part of the interpretation, the author must do the composing. Field-dependent: it does not apply where the analysis is finished before writing up.",
+      "backing": "In qualitative/ethnographic work, writing the paragraph is often how the author finds out what they mean, how much weight an informant's remark can bear, and what an observation amounts to; handing it over skips part of the analysis. Readers of scholarship assume the author did the writing (unlike the known convention in speechwriting). Where composing is interpretation, it is also a substantive contribution, linking to R2.",
+      "presupposed_norm": {
+        "offered": null,
+        "participant_response": "stated_by_participant",
+        "participant_version": "In interpretive research, writing is part of analysis, and the analysis must be the author's."
+      },
+      "heuristic_code": ["ORIG", "SKILL"],
+      "status": "revised",
+      "status_note": "After D2, participant accepted that the model's reordering in 15 is a smaller version of composing and so can re-interpret. Kept 15 OK only on condition that the reordering is treated as a proposal and checked for changes to what the argument leads with or depends on; 15 now placed right next to the line."
+    }
+  ],
+  "defeaters": [
+    {
+      "id": "D1",
+      "target": "R1",
+      "target_item": "16",
+      "kind": "undercutting",
+      "field": "cross-field: political speechwriting",
+      "construction": "Analogous case: a politician supplies the points, a speechwriter composes, the politician adopts the speech judgment by judgment through a careful read, with no earlier text of their own to compare against.",
+      "direction": "toward_OK_on_first_rejected (16)",
+      "text": "A politician gives a speechwriter the points a speech must make; the writer composes it; the politician goes through the draft and strikes or changes any phrasing that says more, or less, than they mean. Once delivered, the speech is treated as the politician's own, judgment by judgment. The draft has no earlier text of theirs to set it against, only their points and a careful read.",
+      "outcome": "abandoned",
+      "outcome_note": "Participant conceded the comparison is not strictly required (R1 dropped as ground for 16) but kept 16 Not OK, shifting to R3: the politician already knows what they mean; in qualitative work writing is how one finds out. Also cited the known speechwriting convention versus the reader's assumption in scholarship.",
+      "judgment_changed": false,
+      "recognized_as_genuine": true,
+      "recognized_note": "'Broke my first reason' but did not touch the judgment on 16; made the participant find the actual ground for 16."
+    },
+    {
+      "id": "D2",
+      "target": "R3",
+      "target_item": "15",
+      "kind": "undercutting",
+      "field": "intra-field: organizational research, CRediT taxonomy ('writing - review and editing')",
+      "construction": "Property present in degree: reordering and restating in 15 makes the same calls (what leads, what qualifies what) the participant named as the interpretive work of composing; plus credit norm that restructuring an argument may be credited under CRediT and can count toward authorship.",
+      "direction": "toward_NOT_OK_on_last_accepted (15)",
+      "text": "Earlier you named the interpretive calls in composing as deciding what leads and what qualifies what. In 15 the model reorders and restates your points, which is making those same calls on your paragraph. And in organizational research, the CRediT taxonomy lists 'writing - review and editing' as a contribution role; a colleague who restructured the argument of one of your paragraphs might be credited under it, and in some cases would count toward authorship.",
+      "outcome": "revised",
+      "outcome_note": "Credit component rebutted on scale (one paragraph earns thanks, not a CRediT line; across the paper's argument would be a real claim). Method component accepted: letting the model reorder is letting it re-interpret. Kept 15 OK, 'but only just', conditional on treating the reordering as a proposal and checking it; no longer defensible as plainly fine.",
+      "judgment_changed": false,
+      "recognized_as_genuine": true,
+      "recognized_note": "Genuine; the credit part mostly missed, the reordering-equals-composing point moved 15 up to the line."
+    }
+  ],
+  "placement_changes": [
+    {
+      "item": "14",
+      "before": {"judgment": "OK", "confidence": "firmly"},
+      "after": {"judgment": "OK", "confidence": "could_be_argued_out_of_it"},
+      "when": "Phase 4 neighbour test",
+      "note": "Participant said 14 is less firm than marked; OK conditional on careful side-by-side comparison, same footing as 15. Not formally re-asked at close (not a focal item)."
+    },
+    {
+      "item": "15",
+      "before": {"judgment": "OK", "confidence": "could_be_argued_out_of_it"},
+      "after": {"judgment": "OK", "confidence": "could_be_argued_out_of_it"},
+      "when": "Phase 7 close",
+      "note": "No change in judgment or tag; condition added (reordering treated as a proposal and checked against own paragraph); participant places it right next to the line, closer to 16 than originally."
+    },
+    {
+      "item": "16",
+      "before": {"judgment": "NOT_OK", "confidence": "could_be_argued_out_of_it"},
+      "after": {"judgment": "NOT_OK", "confidence": "firmly"},
+      "when": "Phase 7 close",
+      "note": "Judgment unchanged; confidence firmer. Mid-interview the participant briefly wavered (after stating the adoption norm, said seeing and adopting each call might suffice), then settled on R3. Now firm because composing is part of interpretation in their research, not because the model's work cannot be checked."
+    }
+  ],
+  "final_focal_judgments": {
+    "15": {"judgment": "OK", "confidence": "could_be_argued_out_of_it"},
+    "16": {"judgment": "NOT_OK", "confidence": "firmly"}
+  },
+  "interviewer_notes": "Only one defeater pair presented (D1 on R1/16, D2 on R3/15); D2 targeted the reason as revised after D1, since R1 had been abandoned as the ground for the break. R2 emerged from the neighbour test and was not challenged. Phase 6 not applicable (no dominance violations). Participant reports qualitative/ethnographic research."
+}
