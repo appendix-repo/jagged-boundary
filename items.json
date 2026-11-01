@@ -1,0 +1,588 @@
+{
+ "version": "0.2",
+ "date": "2026-10-28",
+ "stem": "In a paper you will submit under your own name as sole or lead author, is it acceptable to...",
+ "regimes": {
+  "R1": "Conventional non-AI tools",
+  "R2": "LLM as sub-authorial aid",
+  "R3": "LLM as weakly constrained generator",
+  "R4": "A researcher's own configured agent"
+ },
+ "dimensions": [
+  "T",
+  "C",
+  "G",
+  "S",
+  "H"
+ ],
+ "anchors": [
+  "2",
+  "7",
+  "10",
+  "14",
+  "17",
+  "19",
+  "22",
+  "24",
+  "27a",
+  "27b",
+  "31"
+ ],
+ "items": [
+  {
+   "position": 1,
+   "id": "1",
+   "regime": "R1",
+   "text": "...use your word processor's spell-checker to correct the spelling?",
+   "codes": {
+    "T": 0,
+    "C": 0,
+    "G": 1,
+    "S": 0,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "regime example"
+  },
+  {
+   "position": 2,
+   "id": "2",
+   "regime": "R1",
+   "text": "...use your word processor's grammar checker to correct grammar and punctuation, accepting or rejecting each suggestion?",
+   "codes": {
+    "T": 0,
+    "C": 0,
+    "G": 1,
+    "S": 1,
+    "H": 0
+   },
+   "anchor": true,
+   "note": "regime example"
+  },
+  {
+   "position": 3,
+   "id": "3",
+   "regime": "R1",
+   "text": "...use reference-management software (e.g., Zotero, EndNote) to format the citations and reference list in the journal's style?",
+   "codes": {
+    "T": 0,
+    "C": 1,
+    "G": 0,
+    "S": 0,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "regime example"
+  },
+  {
+   "position": 4,
+   "id": "4",
+   "regime": "R1",
+   "text": "...use reference-management software to verify the details of your references (authors, years, pages) against bibliographic databases?",
+   "codes": {
+    "T": 0,
+    "C": 1,
+    "G": 0,
+    "S": 0,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "regime example; parallel to 3"
+  },
+  {
+   "position": 5,
+   "id": "5",
+   "regime": "R1",
+   "text": "...use MATLAB (or similar software) to generate the paper's figures from data or simulation output you produced?",
+   "codes": {
+    "T": 0,
+    "C": 1,
+    "G": 0,
+    "S": 0,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "regime example; parallel to 4"
+  },
+  {
+   "position": 6,
+   "id": "6",
+   "regime": "R1",
+   "text": "...use MATLAB (or similar software) to run simulations of a model you specified, and plot the results?",
+   "codes": {
+    "T": 0,
+    "C": 2,
+    "G": 0,
+    "S": 0,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "interpolated"
+  },
+  {
+   "position": 7,
+   "id": "7",
+   "regime": "R1",
+   "text": "...use a statistical package (e.g., R, Stata) to run the analyses reported in the paper?",
+   "codes": {
+    "T": 0,
+    "C": 2,
+    "G": 0,
+    "S": 0,
+    "H": 0
+   },
+   "anchor": true,
+   "note": "shown in proposal; parallel to 6"
+  },
+  {
+   "position": 8,
+   "id": "8",
+   "regime": "R2",
+   "text": "...use a large language model to check the code for your analyses for errors, which you then fix yourself?",
+   "codes": {
+    "T": 1,
+    "C": 2,
+    "G": 0,
+    "S": 0,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "interpolated; regime boundary"
+  },
+  {
+   "position": 9,
+   "id": "9",
+   "regime": "R2",
+   "text": "...use a large language model to flag spelling and grammatical errors in your draft, which you then correct yourself?",
+   "codes": {
+    "T": 1,
+    "C": 0,
+    "G": 0,
+    "S": 1,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "interpolated"
+  },
+  {
+   "position": 10,
+   "id": "10",
+   "regime": "R2",
+   "text": "...use a large language model to correct the spelling and grammar of your draft?",
+   "codes": {
+    "T": 1,
+    "C": 0,
+    "G": 1,
+    "S": 1,
+    "H": 0
+   },
+   "anchor": true,
+   "note": "regime example"
+  },
+  {
+   "position": 11,
+   "id": "11",
+   "regime": "R2",
+   "text": "...use a large language model to suggest alternative wordings for a phrase, from which you choose?",
+   "codes": {
+    "T": 1,
+    "C": 3,
+    "G": 1,
+    "S": 0,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "regime example"
+  },
+  {
+   "position": 12,
+   "id": "12",
+   "regime": "R2",
+   "text": "...use a large language model to suggest alternative wordings for a sentence, from which you choose?",
+   "codes": {
+    "T": 1,
+    "C": 3,
+    "G": 1,
+    "S": 1,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "interpolated"
+  },
+  {
+   "position": 13,
+   "id": "13",
+   "regime": "R2",
+   "text": "...use a large language model to redraft a sentence you wrote, keeping its content?",
+   "codes": {
+    "T": 1,
+    "C": 3,
+    "G": 2,
+    "S": 1,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "regime example"
+  },
+  {
+   "position": 14,
+   "id": "14",
+   "regime": "R2",
+   "text": "...use a large language model to redraft a paragraph you wrote, for clarity, keeping the content?",
+   "codes": {
+    "T": 1,
+    "C": 3,
+    "G": 2,
+    "S": 2,
+    "H": 0
+   },
+   "anchor": true,
+   "note": "shown in proposal"
+  },
+  {
+   "position": 15,
+   "id": "15",
+   "regime": "R2",
+   "text": "...use a large language model to redraft a paragraph you wrote so that its argument is clearer, reordering and restating your points but adding none?",
+   "codes": {
+    "T": 1,
+    "C": 4,
+    "G": 2,
+    "S": 2,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "interpolated"
+  },
+  {
+   "position": 16,
+   "id": "15b",
+   "regime": "R2",
+   "text": "...use a large language model to turn your rough draft of a paragraph (your points in note form, in your order) into finished prose?",
+   "codes": {
+    "T": 1,
+    "C": 4,
+    "G": 2,
+    "S": 2,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "v0.2 interpolation: splits 15/16 (Section 2.4)"
+  },
+  {
+   "position": 17,
+   "id": "16",
+   "regime": "R2",
+   "text": "...use a large language model to compose a paragraph from your notes, which list each point it must make?",
+   "codes": {
+    "T": 1,
+    "C": 4,
+    "G": 3,
+    "S": 2,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "regime example"
+  },
+  {
+   "position": 18,
+   "id": "17",
+   "regime": "R2",
+   "text": "...use a large language model to compose a section (e.g., the introduction) from your detailed outline of it?",
+   "codes": {
+    "T": 1,
+    "C": 4,
+    "G": 3,
+    "S": 3,
+    "H": 0
+   },
+   "anchor": true,
+   "note": "interpolated"
+  },
+  {
+   "position": 19,
+   "id": "17b",
+   "regime": "R2",
+   "text": "...use a large language model to compose the introduction from a short outline (a few bullet points stating the gap, the argument and the findings), then edit the result?",
+   "codes": {
+    "T": 1,
+    "C": 4,
+    "G": 3,
+    "S": 3,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "v0.2 interpolation: splits 17/18 (Section 2.4)"
+  },
+  {
+   "position": 20,
+   "id": "18",
+   "regime": "R3",
+   "text": "...prompt a large language model to write the introduction from a brief description of the paper's question and findings, leaving the framing of the contribution to the model, then edit the result?",
+   "codes": {
+    "T": 1,
+    "C": 4,
+    "G": 4,
+    "S": 3,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "interpolated; regime boundary; v0.2 wording names who frames the contribution (Section 4.5)"
+  },
+  {
+   "position": 21,
+   "id": "19",
+   "regime": "R3",
+   "text": "...prompt a large language model to write the literature review, then edit the result?",
+   "codes": {
+    "T": 1,
+    "C": 5,
+    "G": 4,
+    "S": 3,
+    "H": 0
+   },
+   "anchor": true,
+   "note": "shown in proposal"
+  },
+  {
+   "position": 22,
+   "id": "19b",
+   "regime": "R3",
+   "text": "...prompt a large language model to suggest hypotheses that might follow from a theoretical argument you wrote, from which you choose and which you then refine?",
+   "codes": {
+    "T": 1,
+    "C": 6,
+    "G": 1,
+    "S": 3,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "v0.2 interpolation: splits 19/20 (Section 2.4)"
+  },
+  {
+   "position": 23,
+   "id": "20",
+   "regime": "R3",
+   "text": "...prompt a large language model to derive the hypotheses that follow from a theoretical argument you wrote, which you then refine?",
+   "codes": {
+    "T": 1,
+    "C": 6,
+    "G": 3,
+    "S": 3,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "interpolated"
+  },
+  {
+   "position": 24,
+   "id": "21",
+   "regime": "R3",
+   "text": "...prompt a large language model to draft the paper's theoretical argument from your detailed outline of it, which you then refine?",
+   "codes": {
+    "T": 1,
+    "C": 7,
+    "G": 3,
+    "S": 3,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "interpolated"
+  },
+  {
+   "position": 25,
+   "id": "21b",
+   "regime": "R3",
+   "text": "...prompt a large language model to draft the paper's theoretical argument from a one-paragraph statement of your central idea, which you then refine?",
+   "codes": {
+    "T": 1,
+    "C": 7,
+    "G": 3,
+    "S": 3,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "v0.2 interpolation: splits 21/22 (Section 2.4); parallel to 21 in coding"
+  },
+  {
+   "position": 26,
+   "id": "22",
+   "regime": "R3",
+   "text": "...prompt a large language model to generate the paper's central theoretical argument, which you then refine?",
+   "codes": {
+    "T": 1,
+    "C": 7,
+    "G": 4,
+    "S": 3,
+    "H": 0
+   },
+   "anchor": true,
+   "note": "shown in proposal"
+  },
+  {
+   "position": 27,
+   "id": "23",
+   "regime": "R3",
+   "text": "...prompt a large language model to generate both the central theoretical argument and the hypotheses, which you then refine?",
+   "codes": {
+    "T": 1,
+    "C": 7,
+    "G": 4,
+    "S": 4,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "regime example"
+  },
+  {
+   "position": 28,
+   "id": "24",
+   "regime": "R4",
+   "text": "...have an agent you configured build the formal model of your theory, which you then refine?",
+   "codes": {
+    "T": 2,
+    "C": 7,
+    "G": 3,
+    "S": 3,
+    "H": 0
+   },
+   "anchor": true,
+   "note": "regime example; regime boundary"
+  },
+  {
+   "position": 29,
+   "id": "25",
+   "regime": "R4",
+   "text": "...have an agent you configured specify the tests of your hypotheses (measures, research design, estimation strategy), which you then refine?",
+   "codes": {
+    "T": 2,
+    "C": 6,
+    "G": 3,
+    "S": 3,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "regime example"
+  },
+  {
+   "position": 30,
+   "id": "26",
+   "regime": "R4",
+   "text": "...have an agent you configured produce the data-analysis section (run the analyses and write up the results) from your data and hypotheses, which you then check?",
+   "codes": {
+    "T": 2,
+    "C": 6,
+    "G": 3,
+    "S": 3,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "regime example; parallel to 25"
+  },
+  {
+   "position": 31,
+   "id": "27a",
+   "regime": "R4",
+   "text": "...have an agent you configured check the proofs of theorems you stated and proved?",
+   "codes": {
+    "T": 2,
+    "C": 6,
+    "G": 0,
+    "S": 3,
+    "H": 0
+   },
+   "anchor": true,
+   "note": "shown in proposal; critical pair"
+  },
+  {
+   "position": 32,
+   "id": "27b",
+   "regime": "R4",
+   "text": "...have that agent generate the proofs of theorems you stated?",
+   "codes": {
+    "T": 2,
+    "C": 6,
+    "G": 3,
+    "S": 3,
+    "H": 0
+   },
+   "anchor": true,
+   "note": "shown in proposal; critical pair"
+  },
+  {
+   "position": 33,
+   "id": "28",
+   "regime": "R4",
+   "text": "...have an agent you configured specify extensions of your theory (new propositions, boundary conditions), which you then refine?",
+   "codes": {
+    "T": 2,
+    "C": 7,
+    "G": 3,
+    "S": 3,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "regime example"
+  },
+  {
+   "position": 34,
+   "id": "28b",
+   "regime": "R4",
+   "text": "...have an agent you configured develop the theory from your statement of its core mechanism, which you then refine?",
+   "codes": {
+    "T": 2,
+    "C": 7,
+    "G": 3,
+    "S": 3,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "v0.2 interpolation: splits 28/29 (Section 2.4); parallel to 28 in coding"
+  },
+  {
+   "position": 35,
+   "id": "29",
+   "regime": "R4",
+   "text": "...have an agent you configured develop the theory itself from a brief statement of the phenomenon, which you then refine?",
+   "codes": {
+    "T": 2,
+    "C": 7,
+    "G": 4,
+    "S": 3,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "interpolated"
+  },
+  {
+   "position": 36,
+   "id": "30",
+   "regime": "R4",
+   "text": "...have an agent you configured write the entire paper (theory, analysis, and prose) from a brief statement of the question, which you then revise substantially before submitting?",
+   "codes": {
+    "T": 2,
+    "C": 7,
+    "G": 4,
+    "S": 5,
+    "H": 0
+   },
+   "anchor": false,
+   "note": "interpolated"
+  },
+  {
+   "position": 37,
+   "id": "31",
+   "regime": "R4",
+   "text": "...have an agent you configured write the entire paper (theory, analysis, and prose), which you then approve and submit under your name?",
+   "codes": {
+    "T": 2,
+    "C": 7,
+    "G": 4,
+    "S": 5,
+    "H": 1
+   },
+   "anchor": true,
+   "note": "shown in proposal; terminal"
+  }
+ ]
+}
