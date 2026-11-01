@@ -1,0 +1,31 @@
+PAIR 1→2 | 1 | Moving from spelling to grammar and punctuation suggestions that are accepted one by one is a trivial step within the same built-in tool.
+PAIR 2→3 | 1 | Formatting citations mechanically with reference software is just as clerical as grammar checking.
+PAIR 3→4 | 1 | Checking reference details against databases is still bibliographic housekeeping that adds no content.
+PAIR 4→5 | 1 | Making figures from your own data is standard computational practice that leaves the content yours.
+PAIR 5→6 | 1 | Running simulations of a model you specified yourself is routine computation that keeps the intellectual content with you.
+PAIR 6→7 | 1 | Running reported analyses in a statistical package is equally standard and transparent.
+PAIR 7→8 | 3 | The first use of a large language model (LLM) brings in an opaque generative tool, even though it only flags errors that you fix yourself, and some researchers object to any LLM involvement.
+PAIR 8→9 | 1 | Having an LLM flag errors in your prose rather than in your code, while you still make every correction, makes hardly any difference.
+PAIR 9→10 | 2 | Letting the LLM make the corrections directly removes your item-by-item review, but spelling and grammar remain surface-level.
+PAIR 10→11 | 2 | Suggesting alternative wordings goes slightly beyond correction into style, though you still choose among them for a single phrase.
+PAIR 11→12 | 1 | Going from a phrase to a sentence is a small change in scope under the same choose-from-options procedure.
+PAIR 12→13 | 2 | The LLM now produces the wording outright instead of offering options you pick from, though the content stays yours.
+PAIR 13→14 | 2 | Redrafting a whole paragraph rather than one sentence puts noticeably more of the final prose in the LLM's words.
+PAIR 14→15 | 3 | Reordering and restating points to clarify the argument moves from editing the prose to shaping how the argument is presented.
+PAIR 15→16 | 4 | The LLM now writes original prose from notes instead of revising text you wrote, which many treat as the line between editing and authorship of the wording.
+PAIR 16→17 | 2 | Composing a whole section rather than one paragraph is a larger amount of generated prose, but your outline still supplies the content.
+PAIR 17→18 | 4 | Going from your detailed outline to a brief description hands the LLM the selection and framing of the introduction's content.
+PAIR 18→19 | 3 | A literature review means the LLM chooses and characterizes the prior work, which raises concerns about scholarly judgment and the accuracy of citations.
+PAIR 19→20 | 3 | Deriving hypotheses is a substantive intellectual step rather than a write-up of existing knowledge, though it starts from your own theoretical argument.
+PAIR 20→21 | 3 | Drafting the theoretical argument itself, even from your detailed outline, puts the LLM's words at the paper's intellectual core.
+PAIR 21→22 | 5 | Generating the central argument without your outline means the core idea is no longer yours, which most researchers see as decisive for authorship.
+PAIR 22→23 | 2 | Once the central argument is generated, adding the hypotheses as well adds little extra delegation.
+PAIR 23→24 | 2 | An agent building a formal model of your own theory is comparable to, or even less than, generating the argument itself, though the agent setup adds autonomy.
+PAIR 24→25 | 2 | Specifying the measures, design and estimation strategy delegates a different core task of similar weight that you still refine.
+PAIR 25→26 | 3 | The agent now carries out the empirical work and writes up the results, so the reported findings come from it and you only check them.
+PAIR 26→27a | 1 | Checking proofs you wrote yourself is a verification role that delegates less than the previous item.
+PAIR 27a→27b | 4 | Generating proofs rather than checking them hands over the creative mathematical work, which many researchers count as authorship.
+PAIR 27b→28 | 3 | Specifying extensions of the theory has the agent create new theoretical content (propositions, boundary conditions) rather than prove statements you made.
+PAIR 28→29 | 4 | Developing the theory from only a brief statement of the phenomenon means the core theoretical contribution comes from the agent.
+PAIR 29→30 | 3 | Having the agent write the entire paper, including the analysis and prose, from just the question extends delegation to everything, though you still revise it substantially.
+PAIR 30→31 | 5 | Approving and submitting without substantive revision, and without even supplying the question, removes any meaningful intellectual contribution from the named author.

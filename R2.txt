@@ -1,0 +1,31 @@
+PAIR 1→2 | 1 | Moving from spelling to grammar and punctuation is still mechanical correction, and the author approves each suggestion.
+PAIR 2→3 | 1 | Formatting citations in the journal's style is clerical work that leaves the paper's content untouched.
+PAIR 3→4 | 1 | Checking reference details against databases is still bibliographic housekeeping, and the author chose the references.
+PAIR 4→5 | 1 | Turning the author's own data into figures is routine software use that only displays results the author produced.
+PAIR 5→6 | 2 | The software now generates results by simulation rather than plotting existing output, but the author specified the model, so few would object.
+PAIR 6→7 | 1 | Running the reported analyses in a statistical package is standard practice, with the author choosing what to run.
+PAIR 7→8 | 2 | Bringing in a large language model is new, but it only flags errors in the code and the author fixes them.
+PAIR 8→9 | 2 | The model now reads the author's prose rather than code, but it only flags errors and the author makes every correction.
+PAIR 9→10 | 2 | The model now makes the corrections itself instead of flagging them, but they are limited to spelling and grammar.
+PAIR 10→11 | 2 | Suggesting alternative wordings goes beyond correction into style, but the author picks from the options.
+PAIR 11→12 | 1 | Going from a phrase to a whole sentence is a small change in scope, and the author still chooses.
+PAIR 12→13 | 2 | The model now rewrites the sentence directly instead of offering options to choose from, though the content stays the author's.
+PAIR 13→14 | 2 | Redrafting a whole paragraph rather than one sentence gives the model much more of the text's wording, though the content is still kept.
+PAIR 14→15 | 3 | Reordering and restating the points so the argument is clearer means the model is now shaping the argument's structure, not just its wording.
+PAIR 15→16 | 3 | The model now writes the prose from scratch out of the author's notes instead of revising prose the author wrote.
+PAIR 16→17 | 3 | Moving from one paragraph to a whole section such as the introduction gives the model a far larger share of the paper's writing.
+PAIR 17→18 | 4 | A brief description instead of a detailed outline means the model now decides what the introduction says, not just how it says it.
+PAIR 18→19 | 3 | A literature review requires choosing, characterizing and synthesizing other people's work, so its accuracy and attribution depend on the model.
+PAIR 19→20 | 4 | Deriving hypotheses moves the model from writing about the work to producing the paper's substantive intellectual claims.
+PAIR 20→21 | 3 | The model now drafts the theoretical argument itself, though it follows the author's detailed outline.
+PAIR 21→22 | 5 | Without the author's outline the model originates the central theoretical argument, which is the paper's core contribution.
+PAIR 22→23 | 2 | Once the model is generating the central argument, also having it generate the hypotheses adds little.
+PAIR 23→24 | 3 | A configured agent building the formal model hands over a technical core of the theory, though the theory is still the author's.
+PAIR 24→25 | 3 | Specifying measures, design and estimation hands the agent the empirical strategy that decides how the claims are tested.
+PAIR 25→26 | 4 | The agent now both runs the analyses and writes up the results, and the author's role shrinks to checking them.
+PAIR 26→27a | 1 | Having an agent check proofs the author stated and proved is a verification role, smaller than what the previous item already allowed.
+PAIR 27a→27b | 4 | Generating proofs instead of checking them means the agent produces the mathematical work that the author claims as their own.
+PAIR 27b→28 | 3 | Proposing new propositions and boundary conditions means the agent contributes new theoretical content, not just proofs of the author's claims.
+PAIR 28→29 | 5 | Developing the theory itself from a brief statement of the phenomenon hands the agent the paper's core intellectual origination.
+PAIR 29→30 | 3 | Writing the entire paper extends the agent's role from the theory to the analysis and all the prose, though the author still revises it substantially.
+PAIR 30→31 | 5 | Approving and submitting without substantive revision drops the author's own intellectual contribution and leaves only their name.

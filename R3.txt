@@ -1,0 +1,31 @@
+PAIR 1→2 | 1 | Moving from spelling to grammar suggestions that you accept or reject one by one is a trivial change in what the same word-processor tool does.
+PAIR 2→3 | 1 | Formatting citations with reference software is clerical work much like proofreading, so nobody would draw a line here.
+PAIR 3→4 | 1 | Checking reference details against databases is still bibliographic housekeeping that helps accuracy.
+PAIR 4→5 | 1 | Making figures from your own data in MATLAB is standard tool use, and the author still produces the content.
+PAIR 5→6 | 1 | Running simulations of a model you specified is ordinary computation, and you still control the model.
+PAIR 6→7 | 1 | Running the reported analyses in a statistics package is standard practice, just like running simulations.
+PAIR 7→8 | 2 | The change is the move to a large language model, though here it only finds code errors that you fix yourself, so only a few would object.
+PAIR 8→9 | 1 | Having the model flag spelling and grammar errors that you correct yourself is, if anything, less substantive than checking code.
+PAIR 9→10 | 2 | The model now makes the corrections itself instead of flagging them, but they are still surface-level changes.
+PAIR 10→11 | 2 | The model starts offering stylistic wording choices beyond correction, though you still choose among them and only at phrase level.
+PAIR 11→12 | 1 | Going from a phrase to a sentence is a small change in scope, and you still choose the wording.
+PAIR 12→13 | 2 | The model now rewrites your sentence on its own instead of offering options you pick from, though the content stays yours.
+PAIR 13→14 | 2 | The scope grows from one sentence to a whole paragraph of model-written prose, though the content stays yours.
+PAIR 14→15 | 3 | Reordering and restating points to make the argument clearer touches the structure of the argument, not just the wording.
+PAIR 15→16 | 4 | The model now composes the prose from notes instead of revising text you wrote, so the writing itself is no longer yours.
+PAIR 16→17 | 3 | Going from one paragraph to a whole section multiplies how much of the paper's prose the model writes, though it follows your detailed outline.
+PAIR 17→18 | 4 | Starting from a brief description instead of a detailed outline means the model supplies the substance and framing of the introduction, not just the prose.
+PAIR 18→19 | 3 | A literature review carries scholarly judgment about which sources matter and how to describe them accurately, which raises citation and attribution concerns that an introduction does not.
+PAIR 19→20 | 4 | Deriving hypotheses is substantive intellectual work, not writing, even though the theoretical argument is yours.
+PAIR 20→21 | 3 | The model now drafts the theoretical argument itself, though from your detailed outline.
+PAIR 21→22 | 5 | Without your outline, the model originates the paper's central theoretical idea, which is its core intellectual contribution.
+PAIR 22→23 | 2 | Once the model generates the central argument, adding the hypotheses that follow from it is a small extra step.
+PAIR 23→24 | 3 | Having an agent build the formal model is a new kind of delegation, though it formalizes your own theory instead of generating one.
+PAIR 24→25 | 2 | Having the agent specify the empirical tests is research-design work comparable to formal modeling, and it is your hypotheses being tested.
+PAIR 25→26 | 3 | The agent now also runs the analyses and writes up the results, so you only check them instead of refining a design.
+PAIR 26→27a | 1 | Having an agent check proofs you wrote yourself is verification and less delegation than producing the analysis section.
+PAIR 27a→27b | 4 | Producing proofs is original mathematical work that people credit, whereas checking proofs is not.
+PAIR 27b→28 | 3 | Proposing new propositions and boundary conditions adds substantive theoretical content, not just proofs of claims you stated.
+PAIR 28→29 | 5 | Building the whole theory from a brief statement of the phenomenon makes the agent the originator of the paper's central contribution.
+PAIR 29→30 | 3 | The agent now produces the whole paper, including analysis and prose, though you still revise it substantially.
+PAIR 30→31 | 5 | Replacing substantial revision with simple approval and submission under your name leaves no meaningful authorial contribution.
