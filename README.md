@@ -1,6 +1,6 @@
 # The Jagged Boundary: replication repository
 
-This repository is the research artifact that accompanies the Stage 1 proposal "The Jagged Boundary," submitted to the Organization Science Special Issue *AI-Enabled Frontiers in Organizational Science*. It contains the instrument, the analysis code, the response schema, the agent instruction sets and the complete records of every run reported in the technical appendix, together with scripts that regenerate every number the appendix and the proposal report. Section numbers below refer to the technical appendix, which is included as `docs/JAGGED_TECHNICAL_APPENDIX.md`.
+This repository is the research artifact that accompanies the Stage 1 proposal "The Jagged Boundary," submitted to the Organization Science Special Issue *AI-Enabled Frontiers in Organizational Science*. It contains the instrument, the analysis code, the response schema, the agent instruction sets and the complete records of every run reported in the technical appendix, together with scripts that regenerate every number the appendix and the proposal report. Section numbers below refer to the technical appendix, which is included as `technical-appendix/JAGGED_TECHNICAL_APPENDIX.md`.
 
 The repository is anonymized for review. It names no author or institution.
 
