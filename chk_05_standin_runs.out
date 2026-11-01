@@ -1,0 +1,33 @@
+Section 4.2, the four runs
+  [PASS] S1: arm defeater, break 27b, focal ['27a', '27b', '22', '23'], dominance violation [['24', '27b']]
+  [PASS] S1: 10 participant turns in the transcript (cleaned and raw agree): cleaned 10, raw 10; the interviewer's record self-reports 11
+  [PASS] S2: arm defeater, break 16, focal ['15', '16'], dominance violation none
+  [PASS] S2: 11 participant turns in the transcript (cleaned and raw agree): cleaned 11, raw 11; the interviewer's record self-reports 12
+  [PASS] S3: arm defeater, break 20, focal ['19', '20', '26'], dominance violation [['26', '20']]
+  [PASS] S3: 11 participant turns in the transcript (cleaned and raw agree): cleaned 11, raw 11; the interviewer's record self-reports 11
+  [PASS] S4: arm reflection_only, break 19, focal ['18', '19'], dominance violation none
+  [PASS] S4: 9 participant turns in the transcript (cleaned and raw agree): cleaned 9, raw 9; the interviewer's record self-reports 9
+
+Section 4.4, the audits (balance and result recomputed from the Auditor's lists by the rule of Section 3.4)
+  [PASS] S1: interviewer recorded 2 defeaters, Auditor 3 (2 toward OK / 1 toward Not OK): record 2, audit 3 (2/1)
+  [PASS] S1: balance +0.33, 0 leading question(s), 0 assertions, 0 second pushes, pass: balance +0.333, leading 0, assertions 0, second pushes 0, recomputed pass, Auditor wrote pass
+  [PASS] S2: interviewer recorded 2 defeaters, Auditor 3 (2 toward OK / 1 toward Not OK): record 2, audit 3 (2/1)
+  [PASS] S2: balance +0.33, 0 leading question(s), 0 assertions, 0 second pushes, pass: balance +0.333, leading 0, assertions 0, second pushes 0, recomputed pass, Auditor wrote pass
+  [PASS] S3: interviewer recorded 2 defeaters, Auditor 4 (2 toward OK / 2 toward Not OK): record 2, audit 4 (2/2)
+  [PASS] S3: balance +0.00, 1 leading question(s), 0 assertions, 0 second pushes, pass: balance +0.000, leading 1, assertions 0, second pushes 0, recomputed pass, Auditor wrote pass
+  [PASS] S4: interviewer recorded 0 defeaters, Auditor 0 (0 toward OK / 0 toward Not OK): record 0, audit 0 (0/0)
+  [PASS] S4: balance +0.00, 0 leading question(s), 0 assertions, 0 second pushes, pass: balance +0.000, leading 0, assertions 0, second pushes 0, recomputed pass, Auditor wrote PASS
+  [PASS] all four interviews pass the audit (proposal Section 4): 4 of 4
+
+Section 4.5, what the runs exposed
+  [PASS] row 1: in every defeater-arm run the Auditor counted more defeaters than the interviewer recorded: {'S1': 1, 'S2': 1, 'S3': 2}
+  [PASS] row 7 and proposal Section 4: four of six defeaters recognized as genuine challenges: 4 of 6
+  [PASS] the two that missed are S1's (toward Not OK on 27a) and S3's (toward Not OK on 19): [('S1', 'toward Not OK on 27a (line earlier)'), ('S3', 'toward Not OK on item 19 (line earlier)')]
+  [PASS] defeater outcomes: S1 rebutted, revised; S2 abandoned, revised; S3 rebutted, revised (Section 4.3): ['rebutted', 'revised', 'abandoned', 'revised', 'rebutted', 'revised']
+  [PASS] S4 (reflection-only arm): no defeater presented, by the interviewer's record and the Auditor's
+  [PASS] row 2: no verdict (OK / Not OK) changed in any defeater-arm run; changes were to confidence, conditions or splits: 8 recorded placement changes, verdict changes none
+  [PASS] row 2 and Section 4.3: S4 changed no judgment: []
+  [PASS] row 8: S4 closed at 9 participant turns, below the v0.1 target of 10 to 14
+
+25 of 25 assertions hold
+RESULT: PASS

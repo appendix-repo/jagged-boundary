@@ -1,0 +1,42 @@
+Instrument size and anchors (Section 0, 2.2)
+  [PASS] v0.2 has 37 positions: 37
+  [PASS] v0.1 has 32 positions: 32
+  [PASS] v0.2 = the proposal's items 1-31 (27 split as 27a/27b) plus five interpolations: interpolations ['15b', '17b', '19b', '21b', '28b']
+  [PASS] v0.1 = the proposal's items only
+  [PASS] positions run 1..37 in file order
+  [PASS] 11 anchor items: 2, 7, 10, 14, 17, 19, 22, 24, 27a, 27b, 31: ['2', '7', '10', '14', '17', '19', '22', '24', '27a', '27b', '31']
+
+Regimes (Section 1)
+  [PASS] R1 = items 1 to 7: ['1', '2', '3', '4', '5', '6', '7']
+  [PASS] R2 = items 8 to 17b: ['8', '9', '10', '11', '12', '13', '14', '15', '15b', '16', '17', '17b']
+  [PASS] R3 = items 18 to 23: ['18', '19', '19b', '20', '21', '21b', '22', '23']
+  [PASS] R4 = items 24 to 31: ['24', '25', '26', '27a', '27b', '28', '28b', '29', '30', '31']
+
+Why the sequence is not monotone (Section 2.1)
+  [PASS] 18 level-increments from the first item to the last, against 36 steps: 18 increments, 36 steps
+  [PASS] 558 of the 666 item pairs are ordered by dominance: 558 of 666
+
+Parallel inconsistency (Section 5.2)
+  [PASS] identically coded groups {3,4,5} {6,7} {15,15b} {17,17b} {21,21b} {24,28,28b} {25,26,27b}: [['3', '4', '5'], ['6', '7'], ['15', '15b'], ['17', '17b'], ['21', '21b'], ['24', '28', '28b'], ['25', '26', '27b']]
+  [PASS] 13 identically coded pairs: 13
+
+Non-adjacent probes (Section 2.3)
+  [PASS] P1 2 vs 10 differ on T only: ['T']
+  [PASS] P2 17 vs 21 differ on C only: ['C']
+  [PASS] P3 22 vs 29 differ on T only: ['T']
+  [PASS] P4 26 vs 27b coded identically: []
+  [PASS] P5 19 vs 25 incomparable: C and T up, G down: {'T': 1, 'C': 1, 'G': -1}
+  [PASS] P6 18 dominates 13
+
+Dominance steps used by the jaggedness measure J (Section 5.2)
+  (reported, not asserted) 21 of 36 steps raise a dimension and lower none: 1->2, 5->6, 7->8, 9->10, 11->12, 12->13, 13->14, 14->15, 15b->16, 16->17, 17b->18, 18->19, 19b->20, 20->21, 21b->22, 22->23, 27a->27b, 27b->28, 28b->29, 29->30, 30->31
+
+Changes from v0.1 to v0.2 (Sections 2.4, 4.5)
+  [PASS] only item 18 was reworded: ['18']
+  [PASS] no item of v0.1 was recoded: []
+
+Respondent burden (Section 2.2)
+  [PASS] about 15 minutes: 37 items x 12 s + 11 anchors x 25 s + 6 probes x 10 s + 2 min: 899 s = 15.0 min
+
+23 of 23 assertions hold
+RESULT: PASS

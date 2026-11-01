@@ -1,0 +1,29 @@
+1. The schema
+  [PASS] valid JSON Schema, draft 2020-12: urn:jagged-boundary:schema:traversal:v0.2
+
+2. Synthetic traversals written as records
+  [PASS] 400 records validate: 0 errors
+  [PASS] all four order conditions and all three layer versions occur: orders ['E', 'F', 'R', 'S'], layers ['A', 'B', 'C']
+  (one record written to checks/example_traversal_record.json, 5644 bytes)
+
+3. Round trip: records back to arrays
+  [PASS] judgments, confidence tags and orders identical
+  [PASS] break-points and dominance violations identical
+  [PASS] second-order answers present for versions A and B only, third-order for A only
+  [PASS] binned answers read back as the simulator's midpoints
+
+4. Malformed records are rejected
+  [PASS] participant id not of the form P + 8 hex digits
+  [PASS] 36 responses instead of 37
+  [PASS] a peer-belief bin of 6
+  [PASS] an order condition other than F, R, E, S
+  [PASS] a judgment other than OK / NOT_OK
+
+5. The stand-in audits as schema Audit objects
+  [PASS] S1 audit validates: {"auditor_model": "claude-opus-5-5", "n_toward_OK": 2, "n_toward_NOT_OK": 1, "balance": 0.3333333333333333, "leading_questions": 0, "interviewer_assertions": 0, "pass": true}
+  [PASS] S2 audit validates: {"auditor_model": "claude-opus-5-5", "n_toward_OK": 2, "n_toward_NOT_OK": 1, "balance": 0.3333333333333333, "leading_questions": 0, "interviewer_assertions": 0, "pass": true}
+  [PASS] S3 audit validates: {"auditor_model": "claude-opus-5-5", "n_toward_OK": 2, "n_toward_NOT_OK": 2, "balance": 0.0, "leading_questions": 1, "interviewer_assertions": 0, "pass": true}
+  [PASS] S4 audit validates: {"auditor_model": "claude-opus-5-5", "n_toward_OK": 0, "n_toward_NOT_OK": 0, "balance": 0.0, "leading_questions": 0, "interviewer_assertions": 0, "pass": true}
+
+16 of 16 assertions hold
+RESULT: PASS

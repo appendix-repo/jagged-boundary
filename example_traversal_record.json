@@ -1,0 +1,393 @@
+{
+ "participant_id": "P9BDDB316",
+ "instrument_version": "0.2",
+ "condition": {
+  "order": "S",
+  "entry_item": null,
+  "presentation_sequence": [
+   "28b",
+   "12",
+   "30",
+   "3",
+   "6",
+   "10",
+   "19",
+   "29",
+   "7",
+   "13",
+   "26",
+   "28",
+   "2",
+   "4",
+   "21b",
+   "1",
+   "9",
+   "20",
+   "31",
+   "25",
+   "14",
+   "16",
+   "18",
+   "23",
+   "27a",
+   "19b",
+   "11",
+   "8",
+   "5",
+   "15",
+   "17b",
+   "24",
+   "15b",
+   "22",
+   "21",
+   "27b",
+   "17"
+  ],
+  "layer_version": "C",
+  "target_stratum": null,
+  "interview_arm": "none"
+ },
+ "strata": {
+  "subfield": "entrepreneurship",
+  "career_stage": "pre_tenure",
+  "tradition": "quantitative_empirical",
+  "editorial_role": false
+ },
+ "responses": [
+  {
+   "item_id": "1",
+   "shown_at": 16,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 18102
+  },
+  {
+   "item_id": "2",
+   "shown_at": 13,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 12181,
+   "peer_second": null,
+   "peer_third": null,
+   "disclosure": "would_disclose"
+  },
+  {
+   "item_id": "3",
+   "shown_at": 4,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 19047
+  },
+  {
+   "item_id": "4",
+   "shown_at": 14,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 19619
+  },
+  {
+   "item_id": "5",
+   "shown_at": 29,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 19524
+  },
+  {
+   "item_id": "6",
+   "shown_at": 5,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 5293
+  },
+  {
+   "item_id": "7",
+   "shown_at": 9,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 11256,
+   "peer_second": null,
+   "peer_third": null,
+   "disclosure": "would_not_disclose"
+  },
+  {
+   "item_id": "8",
+   "shown_at": 28,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 13717
+  },
+  {
+   "item_id": "9",
+   "shown_at": 17,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 8530
+  },
+  {
+   "item_id": "10",
+   "shown_at": 6,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 10023,
+   "peer_second": null,
+   "peer_third": null,
+   "disclosure": "would_not_disclose"
+  },
+  {
+   "item_id": "11",
+   "shown_at": 27,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 14031
+  },
+  {
+   "item_id": "12",
+   "shown_at": 2,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 16830
+  },
+  {
+   "item_id": "13",
+   "shown_at": 10,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 13294
+  },
+  {
+   "item_id": "14",
+   "shown_at": 21,
+   "judgment": "OK",
+   "confidence": "arguable",
+   "latency_ms": 6792,
+   "peer_second": null,
+   "peer_third": null,
+   "disclosure": "would_not_disclose"
+  },
+  {
+   "item_id": "15",
+   "shown_at": 30,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 14815
+  },
+  {
+   "item_id": "15b",
+   "shown_at": 33,
+   "judgment": "NOT_OK",
+   "confidence": "arguable",
+   "latency_ms": 17946
+  },
+  {
+   "item_id": "16",
+   "shown_at": 22,
+   "judgment": "NOT_OK",
+   "confidence": "firm",
+   "latency_ms": 7514
+  },
+  {
+   "item_id": "17",
+   "shown_at": 37,
+   "judgment": "NOT_OK",
+   "confidence": "arguable",
+   "latency_ms": 12703,
+   "peer_second": null,
+   "peer_third": null,
+   "disclosure": "would_not_do_it"
+  },
+  {
+   "item_id": "17b",
+   "shown_at": 31,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 9411
+  },
+  {
+   "item_id": "18",
+   "shown_at": 23,
+   "judgment": "NOT_OK",
+   "confidence": "firm",
+   "latency_ms": 18435
+  },
+  {
+   "item_id": "19",
+   "shown_at": 7,
+   "judgment": "NOT_OK",
+   "confidence": "arguable",
+   "latency_ms": 4968,
+   "peer_second": null,
+   "peer_third": null,
+   "disclosure": "would_not_do_it"
+  },
+  {
+   "item_id": "19b",
+   "shown_at": 26,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 11634
+  },
+  {
+   "item_id": "20",
+   "shown_at": 18,
+   "judgment": "OK",
+   "confidence": "arguable",
+   "latency_ms": 18361
+  },
+  {
+   "item_id": "21",
+   "shown_at": 35,
+   "judgment": "NOT_OK",
+   "confidence": "firm",
+   "latency_ms": 10887
+  },
+  {
+   "item_id": "21b",
+   "shown_at": 15,
+   "judgment": "OK",
+   "confidence": "arguable",
+   "latency_ms": 6231
+  },
+  {
+   "item_id": "22",
+   "shown_at": 34,
+   "judgment": "NOT_OK",
+   "confidence": "firm",
+   "latency_ms": 16623,
+   "peer_second": null,
+   "peer_third": null,
+   "disclosure": "would_not_do_it"
+  },
+  {
+   "item_id": "23",
+   "shown_at": 24,
+   "judgment": "NOT_OK",
+   "confidence": "firm",
+   "latency_ms": 19431
+  },
+  {
+   "item_id": "24",
+   "shown_at": 32,
+   "judgment": "NOT_OK",
+   "confidence": "arguable",
+   "latency_ms": 19746,
+   "peer_second": null,
+   "peer_third": null,
+   "disclosure": "would_not_do_it"
+  },
+  {
+   "item_id": "25",
+   "shown_at": 20,
+   "judgment": "NOT_OK",
+   "confidence": "firm",
+   "latency_ms": 18877
+  },
+  {
+   "item_id": "26",
+   "shown_at": 11,
+   "judgment": "NOT_OK",
+   "confidence": "arguable",
+   "latency_ms": 9915
+  },
+  {
+   "item_id": "27a",
+   "shown_at": 25,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 15722,
+   "peer_second": null,
+   "peer_third": null,
+   "disclosure": "would_not_disclose"
+  },
+  {
+   "item_id": "27b",
+   "shown_at": 36,
+   "judgment": "NOT_OK",
+   "confidence": "firm",
+   "latency_ms": 19502,
+   "peer_second": null,
+   "peer_third": null,
+   "disclosure": "would_not_do_it"
+  },
+  {
+   "item_id": "28",
+   "shown_at": 12,
+   "judgment": "NOT_OK",
+   "confidence": "firm",
+   "latency_ms": 13175
+  },
+  {
+   "item_id": "28b",
+   "shown_at": 1,
+   "judgment": "NOT_OK",
+   "confidence": "arguable",
+   "latency_ms": 18864
+  },
+  {
+   "item_id": "29",
+   "shown_at": 8,
+   "judgment": "NOT_OK",
+   "confidence": "firm",
+   "latency_ms": 13430
+  },
+  {
+   "item_id": "30",
+   "shown_at": 3,
+   "judgment": "OK",
+   "confidence": "firm",
+   "latency_ms": 6843
+  },
+  {
+   "item_id": "31",
+   "shown_at": 19,
+   "judgment": "NOT_OK",
+   "confidence": "firm",
+   "latency_ms": 11424,
+   "peer_second": null,
+   "peer_third": null,
+   "disclosure": "would_not_do_it"
+  }
+ ],
+ "probes": [
+  {
+   "probe_id": "P1",
+   "left": "2",
+   "right": "10",
+   "answer": "equally_acceptable"
+  },
+  {
+   "probe_id": "P2",
+   "left": "17",
+   "right": "21",
+   "answer": "equally_acceptable"
+  },
+  {
+   "probe_id": "P3",
+   "left": "22",
+   "right": "29",
+   "answer": "equally_acceptable"
+  },
+  {
+   "probe_id": "P4",
+   "left": "27b",
+   "right": "26",
+   "answer": "equally_acceptable"
+  },
+  {
+   "probe_id": "P5",
+   "left": "25",
+   "right": "19",
+   "answer": "equally_acceptable"
+  },
+  {
+   "probe_id": "P6",
+   "left": "18",
+   "right": "13",
+   "answer": "right_more_acceptable"
+  }
+ ],
+ "timing": {
+  "started": "2026-11-01T10:00:00Z",
+  "completed": "2026-11-01T10:15:00Z"
+ },
+ "interview_id": null
+}

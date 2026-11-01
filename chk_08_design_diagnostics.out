@@ -1,0 +1,19 @@
+Section 8.3 (4): number of heuristics selected, plain latent-class model against mixture Rasch model (N = 1,000, planted three)
+  P2 (sharp lines)               latent-class model selects 8 or more (the largest K fitted); mixture Rasch model selects 3
+  P3 (fuzzy lines, hysteresis)   latent-class model selects 6; mixture Rasch model selects 3
+
+Section 8.3 (2): hysteresis tests on the break-point against the acceptance count (scenario P3, h = 1.0, retest of 0.2N drawn from F and R)
+  share of 200 replications rejecting at alpha = 0.05
+  N =  600: between orders  break-point 0.14  count 0.27   |   within-person retest  break-point 0.23  count 0.90
+  N = 1000: between orders  break-point 0.28  count 0.46   |   within-person retest  break-point 0.29  count 0.97
+
+Section 8.4: precision of the H3 power estimate
+  27 of 30 replications = 0.90; 95% Wilson interval [0.74, 0.97]
+
+Section 10.2: invitations for N = 1,000 completed traversals
+  response rate 0.100: 10,000 invitations
+  response rate 0.125: 8,000 invitations
+  response rate 0.150: 6,667 invitations
+
+Section 10.3: power of 65 interviews per arm (placement change 0.40 against 0.65, two-sided alpha = 0.05)
+  power at 65 per arm 0.82; per-arm size for power 0.80: 62

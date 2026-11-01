@@ -1,0 +1,7 @@
+adjacent pairs: 36
+  one dimension up by one level: 22
+  one dimension up by more than one level: 4 [('10->11', {'C': 3}), ('19b->20', {'G': 2}), ('27a->27b', {'G': 3}), ('29->30', {'S': 2})]
+  no dimension up (parallel or descending): 10 ['3->4', '4->5', '6->7', '15->15b', '17->17b', '21->21b', '24->25', '25->26', '26->27a', '28->28b']
+  more than one dimension up (rule violated): 0 []
+ordered dominance pairs: 558 of 666 unordered pairs are comparable
+RESULT: PASS

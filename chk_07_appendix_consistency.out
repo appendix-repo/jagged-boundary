@@ -1,0 +1,54 @@
+Sections 2.1 and 2.2 against instrument/items.json
+  [PASS] design matrix: 37 rows, identical positions, items, regimes, codes and anchors: 37 rows parsed
+  [PASS] item texts: all 37 identical: 37 parsed; differing none
+  [PASS] the fixed stem is identical
+
+Section 2.4 against Check 02
+  [PASS] round 1: flagged steps and their ratings: ['15->16', '17->18', '19->20', '21->22', '28->29']
+  [PASS] round 2: flagged steps and their ratings: ['17b->18', '21->21b', '21b->22', '28b->29']
+  [PASS] Kendall's W 0.96 (v0.1) and 0.95 (v0.2): 0.96, 0.95
+  [PASS] round 1: half of all ratings (52%) were 1 or 2: 0.52
+  [PASS] designed steps rated 3.67 (27a->27b) and 4.33 (30->31): 3.67, 4.33
+
+Sections 7.4 and 8.2 against Check 03
+  [PASS] 7.4: most movable anchor is item 10, |Delta| 0.31: ('10', '0.31')
+  [PASS] 7.4: item 14, 78% accept, 7% openly practise: ('0.78', '0.07')
+  [PASS] 7.4: anchors 2, 7 and 10 have three fixed points under the strong link: ['2', '7', '10']
+  [PASS] 7.4: weak link, private line 27a, no visible line
+  [PASS] 8.2 P1: IQR 0, field band 2
+  [PASS] 8.2 P2: H 0.78, 61% sharp
+  [PASS] 8.2 P3: 2% sharp, forward accepts 1.1 more items, Wilcoxon p = 0.002
+  [PASS] 8.2 Epinet: mean PI -0.14, OR 1.51 [1.45, 1.57]
+  [PASS] 8.2: all 14 recovery checks pass
+  [PASS] 8.3 (1): H 0.39 in P1 against 0.78 in P2
+  [PASS] 8.3 (5): PI -0.09 at anchors nearly everyone accepts, where none was planted: -0.09
+
+Section 8.4 against Checks 03 and 08
+  [PASS] power row 'H2, between orders': appendix ['0.17', '0.30', '0.47'], Check 03 ['0.17', '0.30', '0.47']
+  [PASS] power row 'H2, retest as first designed': appendix ['0.30', '0.59', '0.72'], Check 03 ['0.30', '0.59', '0.72']
+  [PASS] power row 'H2, retest from F and R only (0.2': appendix ['0.65', '0.90', '0.97'], Check 03 ['0.65', '0.90', '0.97']
+  [PASS] power row 'H2, retest from F and R only': appendix ['0.18', '0.24', '0.43'], Check 03 ['0.18', '0.24', '0.43']
+  [PASS] power row 'H4, one anchor | PI = −0.05': appendix ['0.47', '0.99', '1.00'], Check 03 ['0.47', '0.99', '1.00']
+  [PASS] power row 'H4, one anchor | PI = −0.10': appendix ['1.00', '1.00', '1.00'], Check 03 ['1.00', '1.00', '1.00']
+  [PASS] power row 'H5, 11 anchors': appendix ['0.82', '0.99', '1.00'], Check 03 ['0.82', '0.99', '1.00']
+  [PASS] power row 'H3, three heuristics': appendix ['0.00', '0.27', '0.90'], Check 03 ['0.00', '0.27', '0.90']
+  [PASS] H3 interval 'roughly 0.74 to 0.97' (Check 08)
+  [PASS] 10.3: 65 per arm gives power 0.8 for 0.40 against 0.65 (Check 08)
+
+Annexes A to E against the repository files
+  [PASS] Annex A is schema/traversal.v0.schema.json
+  [PASS] Annex B block = checks/chk_01_v0.2.out
+  [PASS] Annex B block = checks/chk_01_v0.1.out
+  [PASS] Annex B block = checks/chk_02_v0.1.out
+  [PASS] Annex B block = checks/chk_02_v0.2.out
+  [PASS] Annex B block = checks/chk_03_synthetic_demo.out
+  [PASS] Annex B has exactly these five blocks: 5
+  [PASS] Annex C contains instruction-sets/JAGGED_INSTRUCTION_SETS.md (body after its title)
+  [PASS] Annex D contains runs/transcripts/S1.md and runs/audits/S1_audit.md
+  [PASS] Annex D contains runs/transcripts/S2.md and runs/audits/S2_audit.md
+  [PASS] Annex D contains runs/transcripts/S3.md and runs/audits/S3_audit.md
+  [PASS] Annex D contains runs/transcripts/S4.md and runs/audits/S4_audit.md
+  [PASS] Annex E contains lakatos/LAKATOS_TABLES_1-4.md
+
+42 of 42 assertions hold
+RESULT: PASS
