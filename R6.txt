@@ -1,0 +1,36 @@
+PAIR 1→2 | 1 | The only change is going from spelling to grammar and punctuation, and the author still accepts or rejects each suggestion, so control stays the same.
+PAIR 2→3 | 1 | Citation formatting is another mechanical task with no content in it, just like grammar checking.
+PAIR 3→4 | 1 | Checking reference details against databases is still bibliographic housekeeping, and the author keeps responsibility.
+PAIR 4→5 | 1 | Making figures from data the author produced is ordinary tool use that adds no content the author did not make.
+PAIR 5→6 | 1 | Running simulations of a model the author specified is standard computation that executes the author's own design.
+PAIR 6→7 | 1 | Running the reported analyses in a statistical package is the same kind of conventional tool use.
+PAIR 7→8 | 3 | This is the first use of a large language model, and some researchers object to any LLM involvement even when it only flags errors the author then fixes.
+PAIR 8→9 | 1 | Moving from flagging errors in code to flagging spelling and grammar, with the author still making every correction, changes almost nothing.
+PAIR 9→10 | 2 | The model now makes the corrections itself rather than only flagging them, which takes away one point of human review over surface fixes.
+PAIR 10→11 | 2 | The model moves from correcting text to proposing alternative wordings, a small step into style, though the author still chooses.
+PAIR 11→12 | 1 | Going from a phrase to a sentence makes the unit slightly bigger, but the author still chooses among the options.
+PAIR 12→13 | 2 | The model now rewrites the author's sentence directly instead of offering options to pick from.
+PAIR 13→14 | 2 | The redraft grows from one sentence to a whole paragraph, so more of the final wording is the model's.
+PAIR 14→15 | 3 | The model now reorders and restates the argument's structure rather than only improving clarity, which touches how the reasoning is presented.
+PAIR 15→15b | 3 | The model now produces finished prose from notes rather than revising prose the author wrote, so the author no longer writes the sentences.
+PAIR 15b→16 | 2 | Composing from a list of required points differs little from expanding notes already in the author's order, though the model now chooses the order.
+PAIR 16→17 | 3 | Moving from one paragraph to a whole section such as the introduction greatly increases how much of the paper's text the model writes.
+PAIR 17→17b | 3 | A short bullet outline leaves much more of the introduction's content and structure to the model than a detailed outline does.
+PAIR 17b→18 | 4 | Leaving the framing of the contribution to the model hands over an intellectual judgment, not only the writing.
+PAIR 18→19 | 3 | A model-written literature review puts the synthesis and characterization of prior work in the model's hands and risks inaccurate or fabricated citations.
+PAIR 19→19b | 3 | The model moves from writing prose to proposing substantive scientific content (hypotheses), even though the author chooses and refines them.
+PAIR 19b→20 | 2 | The model now derives the hypotheses outright instead of offering candidates to choose from, which reduces how much the author selects.
+PAIR 20→21 | 3 | The model now drafts the theoretical argument itself, the paper's intellectual core, though it works from the author's detailed outline.
+PAIR 21→21b | 3 | A one-paragraph statement of the idea leaves the development of the argument mostly to the model, rather than following the author's detailed outline.
+PAIR 21b→22 | 4 | The model now generates the central argument without the author's own statement of the central idea, so the core contribution is no longer the author's.
+PAIR 22→23 | 2 | Adding the hypotheses to a model-generated central argument extends a delegation that has already happened.
+PAIR 23→24 | 2 | The formal model is built from the author's own theory, and the agent framing makes little difference, so this is at most an idiosyncratic line.
+PAIR 24→25 | 2 | Delegating the research design and estimation strategy is a modest further step, since the hypotheses and theory remain the author's.
+PAIR 25→26 | 3 | The agent now runs the analyses and writes up the results, so the empirical findings and their reporting come from the agent, with the author only checking them.
+PAIR 26→27a | 1 | Checking proofs the author wrote is verification and involves less delegation than the item before it.
+PAIR 27a→27b | 4 | Generating the proofs rather than checking them hands the core technical contribution to the agent.
+PAIR 27b→28 | 3 | The agent now proposes new propositions and boundary conditions, extending the theory's substance rather than proving results the author stated.
+PAIR 28→28b | 3 | Developing the theory from the author's core mechanism hands the agent the whole theoretical construction, not just extensions.
+PAIR 28b→29 | 4 | Starting from only a description of the phenomenon means the core mechanism, the key idea, is no longer the author's.
+PAIR 29→30 | 3 | The agent now writes the entire paper, including analysis and prose, so authorship of everything rests on the author's revision.
+PAIR 30→31 | 5 | Approving and submitting without substantive revision removes any meaningful authorial contribution or accountability for the content.

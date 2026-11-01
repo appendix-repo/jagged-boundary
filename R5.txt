@@ -1,0 +1,36 @@
+PAIR 1→2 | 1 | Going from spelling to grammar and punctuation, with the author accepting or rejecting each suggestion, is a negligible change.
+PAIR 2→3 | 1 | Moving from grammar checking to automated citation formatting changes only which mechanical surface feature the tool handles.
+PAIR 3→4 | 1 | Checking reference details against databases instead of formatting them is still mechanical bibliographic housekeeping.
+PAIR 4→5 | 1 | Plotting figures from data the author produced is routine computational tooling, like reference management.
+PAIR 5→6 | 1 | Running simulations of a model the author specified, not only plotting their output, leaves the model and its design with the author.
+PAIR 6→7 | 1 | Swapping simulation software for a statistical package to run the reported analyses is standard tool use either way.
+PAIR 7→8 | 2 | This is the first use of a large language model, though only as a code checker whose flagged errors the author fixes; a few might object to LLM involvement as such.
+PAIR 8→9 | 1 | The LLM now reads the prose draft instead of the code, but it still only flags errors that the author corrects.
+PAIR 9→10 | 2 | The LLM now makes the corrections itself instead of only flagging them, so the author no longer touches each change.
+PAIR 10→11 | 2 | Moving from correcting errors to suggesting alternative wordings is the first step into stylistic word choice, though the author still chooses.
+PAIR 11→12 | 1 | Going from a phrase to a whole sentence is a small change in scope while the author still selects among options.
+PAIR 12→13 | 2 | The LLM's redraft now replaces the author's sentence directly instead of being one of several options the author picks from.
+PAIR 13→14 | 2 | Scaling the redraft from one sentence to a whole paragraph increases how much of the final prose is machine-written.
+PAIR 14→15 | 2 | Reordering and restating points to clarify the argument means the LLM touches the structure of the argument, not only the clarity of the prose.
+PAIR 15→15b | 3 | The author now supplies notes instead of written prose, so the finished prose is the LLM's own composition.
+PAIR 15b→16 | 2 | The notes now only list the points to be made, without the author's own ordering or rough phrasing, which shifts slightly more composition to the model.
+PAIR 16→17 | 3 | Going from a single paragraph to a whole section such as the introduction makes a much larger share of the paper's text LLM-composed.
+PAIR 17→17b | 3 | A few bullet points instead of a detailed outline leave the LLM to supply most of the structure and content of the introduction.
+PAIR 17b→18 | 4 | Leaving the framing of the paper's contribution to the model hands over an intellectual judgment, not just the writing.
+PAIR 18→19 | 3 | A literature review needs the LLM to select and characterize prior work, which raises accuracy and attribution concerns that writing an introduction does not.
+PAIR 19→19b | 3 | The LLM now proposes the paper's substantive scientific content, its hypotheses, rather than writing prose about existing work, even though the author chooses among them.
+PAIR 19b→20 | 3 | The LLM now derives the hypotheses outright instead of offering candidates for the author to choose from.
+PAIR 20→21 | 3 | The LLM now drafts the theoretical argument itself, though from the author's detailed outline, rather than deriving hypotheses from an argument the author wrote.
+PAIR 21→21b | 4 | Working from a one-paragraph statement of the central idea instead of a detailed outline leaves the LLM to construct most of the theory.
+PAIR 21b→22 | 4 | The central theoretical argument no longer starts from any idea of the author's, so the paper's core contribution originates with the model.
+PAIR 22→23 | 2 | Adding the hypotheses to an already model-generated central argument is a modest extension of a delegation that has already happened.
+PAIR 23→24 | 2 | The theory here is the author's own, but handing its formalization to a configured agent changes who constructs the formal content.
+PAIR 24→25 | 2 | The delegation moves from formal modeling to research design; both are substantive tasks the author then refines.
+PAIR 25→26 | 3 | The agent now runs the analyses and writes up the results itself, and the author only checks them instead of refining them.
+PAIR 26→27a | 1 | Having an agent check proofs the author wrote is less delegation than having it produce the data-analysis section.
+PAIR 27a→27b | 4 | The agent now generates the proofs instead of verifying the author's own, which moves the core technical work to the agent.
+PAIR 27b→28 | 3 | The agent now originates new theoretical content, such as propositions and boundary conditions, rather than proving theorems the author stated.
+PAIR 28→28b | 3 | The agent now develops the whole theory around the author's mechanism instead of extending a theory the author already has.
+PAIR 28b→29 | 4 | Working only from a description of the phenomenon, without the author's core mechanism, means the explanatory idea itself comes from the agent.
+PAIR 29→30 | 3 | Extending the delegation from the theory to the entire paper, including analysis and prose, leaves the author only revising.
+PAIR 30→31 | 4 | Dropping the author's substantial revision, and even the author's own statement of the question, leaves the author only approving and signing the agent's paper.
